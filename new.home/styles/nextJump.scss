@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway-Thin.ttf"),
+  	url('../font/Raleway/Raleway-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway-Light.ttf"),
+  	url('../font/Raleway/Raleway-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway-Medium.ttf"),
+  	url('../font/Raleway/Raleway-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway-Bold.ttf"),
+    url('../font/Raleway/Raleway-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+	background-color: #2D2C2C;
+	color: #fff;
+}
+
+#MainBody {
+	font-size: 16px;
+	max-width: 960px;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 35px;
+
+	div.content {
+		font-family: Raleway;
+		font-weight: lighter;
+		margin: 0 auto;
+		text-align: center;
+
+		h1 {
+			font-family: Raleway;
+			font-size: 3.75em;
+			font-weight: 300;
+			margin: 31px auto;
+			text-transform: uppercase;
+		}
+
+		p {
+			color: #32Adb3;
+			font-size: 1.25em;
+			font-weight: 400;
+			line-height: 1.35em;
+		}
+
+		ul {
+			color: white;
+			font-family: Raleway;
+			font-size: 1.25em;
+			font-weight: 300;
+			margin: 20px;
+
+			li {
+				line-height: 1.35em;
+				list-style-type: disc;
+				list-style-position: inside;
+			}
+		}
+	}
+}
+
+div.diamondLogo {
+	background-image: url("../images/diamond.svg");
+	background-position: center center;
+	height: 77px;
+	width: 98px;
+	margin: 102px auto 10px auto;
+}
+
+button#joinNextJump {
+	background-color: #35ADB2;
+	border: none;
+	border-radius: 7px;
+	color: 	white;
+	display: block;
+	font-family: Raleway;
+	font-size: 1.25em;
+	font-weight: 300;
+	margin: 75px auto 0 auto;
+	padding: 6px 36px;
+}
+
+.disclaimer {
+	display: none;
+	font-size: 12px;
+	color: #A2A2A2;
+	width: 912px;
+	position: absolute;
+	left: 50%;
+	margin-left: -456px;
+
+	p { margin: 12px 0; }
+
+	a {
+		color: #35ADB2;
+		text-decoration: none;
+		font-weight: bold;
+
+		&:hover { text-decoration: underline; }
+	}
+}

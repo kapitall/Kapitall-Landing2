@@ -1,0 +1,256 @@
+$green: #719f41;
+
+.semiBold { font-weight: 600;}
+
+//styles
+body {
+    background-color: #d6d6d6;
+    color: #414042;
+    font-family: Raleway, sans-serif;
+}
+
+#Header { border-bottom: 1px solid #414042; }
+
+
+#MainBody {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding-top: 105px;
+}
+
+h2 {
+    font-size: 45px;
+    margin-left: 15px;
+    color: #30adb3;
+}
+
+div.roboContainer {
+    color: #414042;
+    font-family: "Raleway", sans-serif;
+}
+
+.lColumn {
+    float: left;
+    width: 47%;
+    text-align: center;
+    margin-top: 86px;
+    position: relative;
+
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 99%;
+        height: auto;
+    }
+}
+
+.rColumn {
+    float: right;
+    width: 47%;
+    padding: 72px 2% 0;
+
+    .roboDescription {
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 1.4;
+        font-weight: 200;
+
+        &.bold {
+            font-weight: 500;
+        }
+    }
+}
+
+
+ul.roboDetails {
+    margin-top: 25px;
+    list-style: initial;
+    padding-left: 50px;
+    font-size: 18pt;
+
+    li {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    img {
+        height: 100px;
+        width: auto;
+    }
+
+    h4, p {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    h4 {
+        margin-top: 20px;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        word-spacing: 2px;
+    }
+
+    p {
+        margin-top: 5px;
+        line-height: 1.25;
+    }
+}
+
+
+div.applyContainer {
+    margin-top: 51px;
+
+    position: relative;
+}
+
+button.apply {
+    display: block;
+    background-color: #30adb3;
+    border: none;
+    border-radius: 3px;
+    width: 260px;
+    height: 38px;
+    padding: 0;
+    left: -4px; // to align it with the silver status
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+a.faq {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: transparent url('../images/brokerage/info.svg') no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 430px;
+}
+
+.disclaimer {
+    border-top: 1px solid #BFBFBF;
+    padding-top: 20px;
+    top: 670px;
+    font-family: Raleway,sans-serif;
+    display: none;
+    font-size: 9px;
+    color: #878787;
+    width: 1120px;
+    position: absolute;
+    margin-left: 2.25%;
+    font-weight: 300;
+
+    p { margin: 12px 0; line-height: 13px; }
+
+    a {
+        color: #35ADB2;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover { text-decoration: underline; }
+    }
+}
+
+.chatLive {
+    display: block;
+    width: 120px;
+    height: 35px;
+    background: transparent url('../images/brokerage/chatLive.svg') no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 290px;
+}
+
+ul.roboDetails li {
+    text-align: left;
+}
+
+div.roboContainer_mobile {
+    display: none;
+
+    div.line {
+        border-top: 1px solid #939597;
+        width: 91%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        clear: both;
+        display: inline-block;
+    }
+    div.content{
+        text-align: left;
+        padding: 4vw;
+
+        div.title {
+            font-size: 8.5vw;
+            color: #30adb3;
+            margin-bottom: 5vw;
+        }
+
+        div.text {
+            color: #414042;
+            font-size: 3vw;
+            margin-bottom: 5vw;
+            line-height: 5.5vw;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    div.roboContainer { display: none; }
+    div.roboContainer_mobile {
+        display: inherit;
+        text-align: center;
+    }
+    body{    overflow-x: hidden; }
+    div.topSection {
+        margin-top: 30px;
+        img {
+            width: 37%;
+        }
+    }
+    button.apply{
+        display: table-row;
+        width: 91%;
+        height: 9vw;
+        z-index: 0;
+        font-size: 4vw;
+    }
+    div.applyContainer {
+        display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        zoom: 1.5;
+
+        > a {
+            position: relative;
+            float: left;
+            left: auto;
+            margin: 0 20px;
+        }
+    }
+
+    ul.roboDetails {
+        font-size: 2.5vw;
+        > li{
+            float: none;
+            width: auto;
+            padding: 0 20px 20px 20px !important;
+        }
+    }
+
+    div.disclaimer{
+        width: 90%;
+        left: 2%;
+        border-top: none;
+    }
+
+    #signUp_mobile{
+        display: inherit;
+    }
+}

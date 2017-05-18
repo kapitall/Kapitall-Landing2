@@ -1,0 +1,156 @@
+a {
+	color:#128A8D;
+	text-decoration:none;
+
+	&:hover{
+		text-decoration:underline;
+		color:#128A8D;
+	}
+}
+
+.error {
+	color: #d84e00;
+	display: none;
+	font-size: 12px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+#MainContent,
+div.disclaimer {
+	margin: 0 auto;
+	width: 950px;
+}
+
+#Backstage {
+	position:absolute;
+	top: 9px;
+	right: -2px;
+	width: 125px;
+	height: 18px;
+
+	.string {
+		position:absolute;
+		top: -16px;
+		left: 0;
+		width: 125px;
+		height: 16px;
+		background: transparent url('../images/heroSprite.png') no-repeat 26px -10px;
+	}
+
+	.imageWrap {
+		position:absolute;
+		top: 0;
+		left: 0;
+		width: 125px;
+		height: 18px;
+
+		a {
+			position:absolute;
+			top: 0;
+			left: 20px;
+			width: 105px;
+			height: 18px;
+			background: transparent url('../images/heroSprite.png') no-repeat 6px -25px;
+			text-indent:-9999px;
+			cursor: pointer;
+		}
+	}
+}
+
+#ChatLogin {
+	bottom: 0;
+	font-size: 13px;
+	position: absolute;
+	right: 0;
+
+	li { display: inline-block; }
+
+	.onlineIndicator {
+		background: url('../images/heroSprite.png') no-repeat -267px -58px;
+		display: inline-block;
+		height: 12px;
+		width: 10px;
+	}
+	.online .onlineIndicator { background-position: -250px -58px; }
+
+	.sep { padding: 0 2px; }
+}
+
+#Hero {
+	background: #DEDEDE;
+	height: 410px;
+	margin-top: 10px;
+	position: relative;
+
+	& > div[data-status] {
+		color: #FFF;
+		display: none;
+		font-size: 16px;
+		left: 405px;
+		position: absolute;
+		top: 110px;
+		width: 500px;
+	}
+
+	&[data-status="dft"] {
+		background: url('../images/worldcup/dft.jpg') no-repeat 0 0;
+		[data-status="dft"] { display: block; }
+	}
+	&[data-status="fund"] {
+		background: url('../images/worldcup/fund.jpg') no-repeat 0 0;
+		& > div { left: 415px; }
+		[data-status="fund"] { display: block; }
+	}
+	&[data-status="mem"] {
+		background: url('../images/worldcup/mem.jpg') no-repeat 0 0;
+		[data-status="mem"] { display: block; }
+	}
+}
+
+
+
+#QuoteCycle{height:135px;overflow:hidden;}
+ul.pressQuotes{color:#A7A9AC;float:left;font-size:12px;font-style:italic;margin:28px 0 6px 15px;padding:0;width:1000px;}
+ul.pressQuotes li{display:block; width:252px; float:left; height:75px; position:relative; }
+ul.pressQuotes li em{display:block; text-indent:-9999px; background:transparent url('../images/quote-sprite-gray.png') no-repeat 0 0; position:absolute; right:0; bottom:0; width: 20px; height: 20px; }
+ul.pressQuotes li#bloomberg{width: 226px;}
+ul.pressQuotes li#bloomberg em{background-position:0 0;bottom:-2px;height:30px;right:71px;width:96px;}
+ul.pressQuotes li#wired{width: 266px;}
+ul.pressQuotes li#wired em{background-position:0 -45px;height:30px;right:80px;width:90px;}
+ul.pressQuotes li#mashable{width: 272px;}
+ul.pressQuotes li#mashable em{background-position:0 -95px;height:25px;right:82px;width:90px;}
+ul.pressQuotes li#tech-crunch{width: 181px;}
+ul.pressQuotes li#tech-crunch em{background-position:-3px -140px;bottom:-5px;height:30px;right:22px;width:100px;}
+ul.pressQuotes li#cbs-news{width:236px;}
+ul.pressQuotes li#cbs-news em{background-position:0 -187px;bottom:-3px;height:30px;right:58px;width:121px;}
+ul.pressQuotes li#barrons{width: 263px;}
+ul.pressQuotes li#barrons em{background-position:-3px -233px;bottom:-5px;height:30px;right:70px;width:100px;}
+ul.pressQuotes li#aol-daily-finance{width: 255px;}
+ul.pressQuotes li#aol-daily-finance em{background-position:0 -267px;bottom:-6px;height:46px;right:46px;width:130px;}
+ul.pressQuotes li#usa-today{width: 181px;}
+ul.pressQuotes li#usa-today em{background-position:0 -318px;bottom:3px;height:30px;right:19px;width:60px;}
+ul.pressQuotes li#huffpost-tech{margin-left:17px;width:300px;}
+ul.pressQuotes li#huffpost-tech em{background-position:0 -368px;bottom:4px;height:22px;right:101px;width:133px;}
+ul.pressQuotes li#read-write-web{width:359px;}
+ul.pressQuotes li#read-write-web em{background-position:0 -409px;bottom:3px;height:30px;right:89px;width:129px;}
+ul.pressQuotes li#pc-mag{width: 250px;}
+ul.pressQuotes li#pc-mag em{background-position:0 -453px;bottom:3px;height:30px;right:38px;width:66px;}
+
+div.linebreak {
+  width: 950px;
+  height: 3px;
+  margin: 5px 0 40px;
+  background: url('../images/line_black.png');
+  clear: both;
+}
+
+div.disclaimer {
+	color:#AAACAF;
+	font-size:12px;
+	margin-bottom:40px;
+
+	a { color:#47A9AF !important; }
+	p { margin: 12px 0; }
+	li { list-style: circle inside; }
+}

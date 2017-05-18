@@ -1,0 +1,130 @@
+.sprite { background-image: url('../images/sprite.png'); background-position: 100px 100px; background-repeat: no-repeat; }
+
+input {
+	background-color: #CCC;
+	color: #666;
+	padding: 5px;
+	font-size: 14px;
+}
+
+body {
+	background-color: #c6c8c5;
+}
+
+#Header { position: fixed; }
+
+#MainBody { 
+	margin-top: 35px;
+
+	transition: margin 500ms;
+	-webkit-transition: margin 500ms; /* Safari */
+}
+
+#Header.signInOpen + #MainBody { margin-top: 120px; }
+
+#Graphic { 
+	background: url(../images/infographic.jpg) 0 0 no-repeat;
+	position: relative;
+}
+
+#Graphic > a { 
+	display: block;
+	position: absolute;
+	text-decoration: none;
+	z-index: 10;
+}
+
+#Graphic > a:hover { text-decoration: none; }
+
+#Graphic > img { 
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+
+#SocialButtons{
+	position: fixed;
+	right: 20px;
+	bottom:20px;
+
+	a {
+		display: block;
+		width:30px;
+		height: 30px;
+		background: url("../images/infographics_socialsprite.png") no-repeat;
+		margin-bottom: 5px;
+	}
+
+	#Embed { background-position : 0 0px; }
+	#Facebook { background-position : 0 -46px; }
+	#Twitter  { background-position : 0 -92px; }
+	#Youtube  { background-position : 0 -138px; }
+	#Pintrest { background-position : 0 -183px; }
+}
+
+
+#EmbedPopup {
+	background:#FFF;
+	border:1px solid #9AD1DA;
+	color:#595A5C;
+
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+
+	-webkit-box-shadow: 0 0 5px #9AD1DA;
+	-moz-box-shadow: 0 0 5px #9AD1DA;
+	box-shadow: 0 0 5px #9AD1DA;
+
+	height: 255px;
+	left:50%;
+	margin: -128px 0 0 -185px;
+	padding:15px;
+	position:absolute;
+	overflow:hidden;
+	text-align: center;
+	top: 50%;
+	width: 370px;
+	z-index: 999;
+
+	h3 {
+		background: url("../images/embedpopup.jpg") no-repeat center;
+		height: 128px;
+		margin: 0;
+		text-indent: -9999px;
+		width: 360px;
+	}
+
+	p {
+		color: #595a5c;
+		text-align: center;
+		margin: 5px 0 10px;
+	}
+
+	a.closeBtn {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		font-family: sans-serif;
+		text-decoration: none;
+		color: #666666;
+	}
+
+	#embed_code {
+	/*-webkit-border-radius: 4px;*/
+	/*-moz-border-radius: 4px;*/
+	/*border-radius: 4px;*/
+
+
+	background: #fcfcfc;
+	border: 1px solid #dadada;
+	box-shadow:inset 0 0 10px #dadada;
+	height: 85px;
+	font-family: Calibri,Trebuchet MS,Arial,Sans,Helvetica;
+
+	resize: none;
+	font-size: 12px;
+	width:333px;
+	}
+}

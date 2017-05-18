@@ -1,0 +1,129 @@
+body {
+    background-color: #333333;
+}
+
+div.container {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    top: 8em;
+    position: relative;
+
+    div.center {
+        display: inline-block;
+        min-width: 940px;
+    }
+
+    div.promoImage {
+        background: transparent url('../images/kapitallM/landingPage_image.jpg') no-repeat 0 0;
+        background-size: 314px;
+        height: 602px;
+        width: 315px;
+    }
+
+    div.content {
+        line-height: 1.6em;
+        margin-top: 9em;
+        text-align: left;
+        margin-left: 95px;
+
+        div.title {
+            color: #00a4ff;
+            font-size: 42px;
+            width: 500px;
+
+            margin-bottom :1.2em;
+        }
+
+        div.text {
+            color: #f2f2f2;
+            font-size: 18px;
+
+            > p {
+                margin-bottom: 1.5em;
+                max-width: 525px;
+            }
+        }
+
+
+
+    }
+
+    span.semiBold {
+        font-weight: 600;
+        color: white;
+    }
+
+    div.submitButton { display: inline-block; }
+    div.button {
+        background-color: #00a4ff;
+        padding: 5px 40px;
+        color: white;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    input[type="email"] {
+        padding: 5px;
+        font-size: 18px;
+        height: 20px;
+        width: 321px;
+        font-family: "Raleway";
+
+        &.error { color: #e17c8f;  }
+    }
+
+    div.errorMessage {
+        top: 10px;
+        font-size: 15px;
+    }
+
+    div.overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: #8d8f91;
+        background-color: rgba(51, 51, 51, 0.95);
+
+        div.center {
+            min-width: inherit;
+            position: relative;
+            top: 70px;
+
+            div.closeOverlay {
+                width: 15px;
+                height: 20px;
+                background: transparent url("../images/overlay_close.png") no-repeat 0 0;
+                background-size: contain;
+                opacity: 0.8;
+                position: absolute;
+                right: 0;
+                top: -25px;
+                cursor: pointer;
+            }
+        }
+
+        div.text {
+            border-top: 1px solid;
+            position: relative;
+            display: inline-block;
+            padding-top: 10px;
+            font-size: 27px;
+        }
+    }
+}
+
+div.disclaimer {
+    margin-top: 80px;
+    border-top: 1px solid #3b3b3b;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.2em;
+}
+
+.error {
+    color: #ab3d52;
+    font-weight: normal;
+    font-size: 18px;
+}

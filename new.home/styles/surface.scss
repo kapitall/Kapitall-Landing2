@@ -1,0 +1,398 @@
+.hasLayout, .contains { zoom: 1; }
+.contains:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.fright { float: right; }
+.fleft { float: left; }
+.none { display: none; }
+.center  { text-align: center; }
+.sprite { background-image: url('../images/surface/sprite.png'); background-position: 100px 100px; background-repeat: no-repeat; }
+
+body {
+    background-color: #ADCDCB;
+    color: #FFF;
+    font-family: 'Calibri','Myriad Pro','Myriad','Arial','Helvetica',sans-serif;
+}
+
+input {
+    padding: 5px;
+    font-family: 'Calibri','Myriad Pro','Myriad','Arial','Helvetica',sans-serif;
+    font-size: 14px;
+}
+
+#SignInError, #SignUpError {
+    color: #d84e00;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+#SignInError { margin-top: -8px; }
+
+#SignOutMessage { margin: 10px 10px 0 20px; }
+
+#SignIn {
+    margin: 15px 20px 0 0;
+    padding: 200px 0 0;
+    text-align: center;
+
+    .logo {
+        background: url('../images/surface/logoSprite.png') no-repeat 0 0;
+        display: inline-block;
+        height: 50px;
+        width: 290px;
+    }
+
+    form {
+        border-top: 1px solid #EFEEEE;
+        display: inline-block;
+        margin-top: 25px;
+        padding-top: 25px;
+        text-align: left;
+    }
+
+    button {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background: #DB463E;
+        line-height: 27px;
+        margin-top: 4px;
+        padding: 0 25px;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+
+    input {
+        display: block;
+        margin-right: 10px;
+        background-color: #fff;
+    }
+
+    div.passwordContainer { position: relative; }
+
+    #ForgotPassword {
+        background-position: 0px -149px;
+        height: 20px;
+        position: absolute;
+        right: 15px;
+        text-indent: -100000px;
+        top: 7px;
+        width: 20px;
+    }
+
+    input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: top;
+    }
+}
+
+#SignUpControl {
+    padding: 9px 20px 0 0;
+    text-align: right;
+
+    button {
+        cursor: pointer;
+        margin: 0 0 0 15px;
+        padding: 0;
+        border: 0;
+        background: #49C2C5;
+        line-height: 27px;
+        margin-top: 4px;
+        padding: 0 25px;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+}
+
+#SignUp {
+    display: none;
+    margin: 0 auto;
+    width: 700px;
+
+    input {
+        background-color: #CCC;
+        color: #666;
+    }
+
+    .banner {
+        background: url('../images/surface/logoSprite.png') no-repeat 0 -70px;
+        height: 60px;
+        width: 643px;
+    }
+
+    .formCol { 
+      padding: 18px;
+      padding-bottom: 25px;
+      padding-top: 20px;
+      border: 1px solid #58585B;
+
+        input {
+            margin: 10px 0 5px 0;
+            width: 200px;
+        }
+
+        input[type="checkbox"] {
+            display: inline-block;
+            margin: 3px 5px 0 0;
+            vertical-align: top;
+            width: auto;
+        }
+    }
+
+    .subText { font-size: 10px; }
+
+    button {
+        padding: 7px 14px;
+        display: inline-block;
+        cursor: pointer;
+        border: 0;
+        background: #49C2C5;
+        line-height: 27px;
+        margin-top: 4px;
+        padding: 0 25px;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+}
+
+#SignUp .actions {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#emailConfirmationMessage .title {
+  background: url(../images/surface/taglines.png) no-repeat -7px -48px;
+  width: 617px;
+  height: 94px;
+  margin-left: 130px;
+}
+
+#emailConfirmationMessage .content { font-size: 14px; padding-top: 15px; margin-left: 130px; }
+
+#emailConfirmationMessage .content a { font-size: 14px; }
+
+#emailConfirmationMessage .emailAddress { font-style: italic; }
+
+#emailConfirmationMessage p { padding-bottom: 15px; line-height: 22px; }
+
+#emailConfirmationMessage .content a { color: #33AEB4; }
+
+#emailConfirmationMessage .kapitallGuy {
+  background-position: -252px -1px;
+  height: 213px;
+  width: 97px;
+  float: left;
+}
+
+#SignUp .rightCol .container { margin-bottom: 25px; }
+
+#SignUp .rightCol .container .info{ margin: 20px 20px 10px 0px; }
+#SignUp .rightCol .container .practice .infoText {padding-top: 9px; }
+#SignUp .rightCol .container .practice .infoText .title { color: #2085BC; }
+#SignUp .rightCol .container .compete .infoText { padding-top: 9px; }
+#SignUp .rightCol .container .compete .infoText .title { color: #F9AA1E; }
+#SignUp .rightCol .container .trade .infoText { padding-top: 5px; }
+#SignUp .rightCol .container .trade .infoText .title {color: #44B5B6; }
+
+
+#SignUp .rightCol .container .infoText .title{
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+#SignUp .rightCol .container .infoImage{
+  width: 56px;
+  height: 56px;
+  float: left;
+  margin-right: 15px;
+}
+#SignUp .rightCol .container .practice .infoImage{ background-position: -173px 0; }
+#SignUp .rightCol .container .compete .infoImage{ background-position: -173px -79px; }
+#SignUp .rightCol .container .trade .infoImage{ background-position: -173px -166px; }
+
+#SignUp .rightCol { width: 430px; }
+
+#SignUp .regSecureInfo {
+  background-color: white;
+  padding: 2px 0 5px 0;
+  display: inline-block;
+
+  li {
+    display: inline-block;
+    padding-left: 10px;
+    text-transform: uppercase;
+  }
+}
+
+#SignUp .regSecureInfo .verisign img { width: 50px; }
+
+#SignUp .regSecureInfo .truste img{
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+#MainBody {
+    height: 718px;
+    min-height: 400px;
+    min-width: 765px;
+    position: relative;
+    background-color: #ADCDCB;
+    background-size: auto;
+    background-position: center center;
+
+    transition: height 500ms;
+    -webkit-transition: height 500ms; /* Safari */
+}
+
+#CornerImage {
+    background: url(../images/surface/CornerImage.png) no-repeat 0 0;
+    bottom: 0;
+    height: 348px;
+    left: 0;
+    position: absolute;
+    width: 443px;
+}
+
+#Footer {
+    background-color: #414042;
+    position: relative;
+    width: 100%;
+}
+
+#TickerBar, #QuoteTicker {
+    height: 45px;
+    overflow: hidden;
+    width: 100%;
+}
+
+#FooterDetails {
+    font-size: 12px;
+    width: 950px;
+    margin: 30px auto 0;
+    padding: 20px 20px 70px;
+    position: relative;
+}
+
+#FooterDetails p { margin: 12px 0; }
+
+#FooterDetails img.columnbreak {
+     position: absolute;
+     top: 23px;
+     left:175px;
+     width: 3px;
+     height: 319px;
+}
+
+/* links */
+#FooterDetails .kapitallLinks {
+     margin: 30px 0 25px 200px;
+}
+#FooterDetails .kapitallLinks li {
+     display:inline;
+     color: #aaacaf;
+     font-size:18px;
+     margin-left: 20px;
+}
+#FooterDetails .kapitallLinks li:first-child {
+     margin-left:0;
+}
+
+#FooterDetails a { color: #95CFCC; text-decoration: none; }
+#FooterDetails a:hover { color: #95CFCC; text-decoration: underline; }
+
+.footerFeature {
+     position: absolute;
+     top: 50px;
+     left:15px;
+}
+
+/* sipc logo */
+#sipc-logo {
+     float:right;
+     width:97px;
+     height:45px;
+     margin-top:-40px;
+     background-position: 0px -80px;
+     text-indent:-9999px;
+}
+
+/* disclamier */
+#FooterDetails .disclaimer {
+     margin-left: 200px;
+}
+
+#FooterDetails ul.socialNetworkButtons li{
+     height: 22px;
+     margin-bottom: 13px;
+     font-size: 14px;
+     font-weight: bold;
+     line-height: 22px;
+     display: block;
+}
+
+#FooterDetails ul.socialNetworkButtons li:hover a {
+     text-decoration: underline;
+}
+
+#FooterDetails ul.socialNetworkButtons a span{
+     display:block;
+     width:23px;
+     height:23px;
+     margin: 0 9px 0 0;
+     float:left;
+     background-image: url(../images/surface/social_icons.png);
+     background-repeat: no-repeat;
+     border-radius:4px;
+     -moz-radius:4px;
+     -webkit-radius:4px;
+}
+
+#FooterDetails ul.socialNetworkButtons .googleLink span{
+     background:url(../images/surface/googleSocialButton.png) no-repeat;
+}
+
+/* different icons */
+#FooterDetails a.facebookLink span{background-position: 0px 0px;}
+#FooterDetails li:hover a.facebookLink span,
+#FooterDetails a.facebookLink:active span{background-position: -35px 0px;}
+#FooterDetails a.twitterLink span{background-position: 0px -34px;}
+#FooterDetails li:hover a.googleLink span,
+#FooterDetails a.googleLink:active span{background-position: -35px 0px;}
+#FooterDetails li:hover a.twitterLink span,
+#FooterDetails a.twitterLink:active span{background-position: -35px -34px;}
+#FooterDetails a.youtubeLink span{background-position: 0px -68px;}
+#FooterDetails li:hover a.youtubeLink span,
+#FooterDetails a.youtubeLink:active span{background-position: -35px -68px;}
+#FooterDetails a.pinterestLink span{background-position: 0px -102px;}
+#FooterDetails li:hover a.pinterestLink span,
+#FooterDetails a.pinterestLink:active span{background-position: -35px -102px;}
+#FooterDetails a.rssLink span{background-position: 0px -136px;}
+#FooterDetails li:hover a.rssLink span,
+#FooterDetails a.rssLink:active span{background-position: -35px -136px;}
+
+/* footer left - made in NYC */
+#FooterDetails .madeinNYC {
+     width: 80px;
+     height: 55px;
+     margin-top: 40px;
+     text-indent: -100%;
+     overflow: hidden;
+     position: relative;
+     display: block;
+     background-position: -2px -27px;
+}
+#FooterDetails .madeinNYC:hover {
+     background-position: -90px -27px;
+}
+#FooterDetails .madeinNYC:active {
+     background-position: -2px -27px;
+}

@@ -1,0 +1,126 @@
+
+#BrandVideo {
+	left: 50%;
+	margin-left: -320px;
+
+	position: absolute;
+}
+
+#BrandVideo .mainTagLine {
+	height: 40px;
+	width: 640px;
+	margin-bottom: 5px;
+}
+
+body[data-brandLabel="jesusT"] #BrandVideo .mainTagLine,
+body[data-brandLabel="jesus2"] #BrandVideo .mainTagLine { background: url('../images/taglines.png') 0px -145px no-repeat; }
+body[data-brandLabel="jesus1"] #BrandVideo .mainTagLine { background: url('../images/taglines.png') -1px -205px no-repeat; }
+
+body[data-brandLabel="genghis1"] #BrandVideo .mainTagLine { background: url('../images/taglines.png') -1px -456px no-repeat; }
+body[data-brandLabel="genghisT"] #BrandVideo .mainTagLine,
+body[data-brandLabel="genghis2"] #BrandVideo .mainTagLine { background: url('../images/taglines.png') 1px -649px no-repeat; }
+
+body[data-brandLabel="che1"] #BrandVideo .mainTagLine { background: url('../images/taglines.png') 0px -392px no-repeat; }
+body[data-brandLabel="cheT"] #BrandVideo .mainTagLine,
+body[data-brandLabel="che2"] #BrandVideo .mainTagLine { background: url('../images/taglines.png') 1px -711px no-repeat; }
+
+body[data-brandLabel="cleo1"] #BrandVideo .mainTagLine { background: url('../images/taglines.png') 0px -520px no-repeat; }
+body[data-brandLabel="cleoT"] #BrandVideo .mainTagLine,
+body[data-brandLabel="cleo2"] #BrandVideo .mainTagLine { background: url('../images/taglines.png') 0px -266px no-repeat; }
+
+body[data-brandLabel="leo1"] #BrandVideo .mainTagLine { background: url('../images/taglines.png') -1px -328px no-repeat; }
+body[data-brandLabel="leoT"] #BrandVideo .mainTagLine,
+body[data-brandLabel="leo2"] #BrandVideo .mainTagLine { background: url('../images/taglines.png') 1px -587px no-repeat; }
+
+#BrandImage {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	bottom: -4px;
+	cursor: pointer;
+	display: none;
+	height: 417px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	width: 888px;
+}
+body[data-brandLabel] #BrandImage { display: block; }
+
+body[data-brandLabel^="jesus"] #BrandImage { background-image: url('../images/jesus.png'); }
+body[data-brandLabel^="genghis"] #BrandImage { background-image: url('../images/genghis.png'); }
+body[data-brandLabel^="che"] #BrandImage { background-image: url('../images/che.png'); }
+body[data-brandLabel^="cleo"] #BrandImage { background-image: url('../images/cleo.png'); }
+body[data-brandLabel^="leo"] #BrandImage { background-image: url('../images/leo.png'); }
+
+
+#BrandButton {
+	background-color: #34acb0;
+	background-image: url(../images/joinNowButton.png);
+	background-repeat: no-repeat;
+	background-position: 7px 7px;
+	bottom: 5px;
+	cursor: pointer;
+	height: 39px;
+	position: absolute;
+	left: 50%;
+	margin-left: -123px;
+	width: 245px;
+	z-index: 9;
+
+	border-radius:4px;
+	-moz-radius:4px;
+	-webkit-radius:4px;
+}
+
+body[data-brandLabel$="T"] #BrandButton { 
+	background-image: url('../images/playNowButton.png');
+	margin-left: -68px;
+	width: 135px;
+}
+
+#BrandVideoList {
+	background-color: #262626;
+	display: none;
+	position: absolute;
+	bottom: 55px;
+	left: 10px;
+	transition: height 500ms;
+	-webkit-transition: height 500ms; /* Safari */
+}
+
+body[data-brandLabel] #BrandVideoList { display: block; }
+
+#BrandVideoList #ShowVideoButton {
+  width: 200px;
+  border: 1px solid #58585B;
+  padding: 5px;
+}
+
+#BrandVideoList .videoButtonImage {
+  background-position: 0 -124px;
+  width: 15px;
+  height: 16px;
+  margin-right: 10px;
+  float: left;
+}
+
+#BrandVideoList .videoText {
+  color: #33AEB4;
+  font-size: 12px;
+  padding-top: 3px;
+  cursor: pointer;
+}
+
+#BrandVideoList .videoList img { width: 100px; }
+
+#BrandVideoList .videoList > div {
+  border: 1px solid #58585B;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#BrandVideoList .videoList span {
+  position: relative;
+  bottom: 31px;
+  left: 10px;
+}

@@ -1,0 +1,84 @@
+#Header {
+
+	h1{
+		background: url('../images/heroSprite.png') no-repeat -3px -57px;
+		bottom: 0;
+		float: left;
+		height:40px;
+		left: 0;
+		padding: 0;
+		position: absolute;
+		text-indent: -9999px;
+		width:200px;
+	}
+}
+
+#Hero {
+	background-image: none !important;
+}
+
+.ceoContent {
+	background: #32AEB4 url('../images/mm/ceo_bg.png') no-repeat 0px 0px;
+	height: 400px;
+	position: relative;
+
+	> div.heroDescription {
+		background: transparent url('../images/mm/ceo_title.png') no-repeat 0px 0px;
+		color: #fff;
+		font-weight: normal;
+		font-size: 16px;
+		position: relative;
+		top: 85px;
+		padding-top: 70px;
+	}
+
+	> div {
+		left: 400px;
+	}
+}
+
+div.kapitallSignIn {
+	position: relative;
+	top: 122px;
+
+	div.fieldItem.center {
+		text-align: right;
+
+		> a { color: #BEE5E7; }
+	}
+
+	span.placeholderPolyfill { color: #A5A8AB; }
+
+	input {
+		background-color: #fff;
+		border: none;
+		padding: 6px;
+	}
+
+	button {
+		background-color: #F47421;
+		padding: 7px;
+		color: #fff;
+		-webkit-box-shadow: 0 0 8px 0px #555;
+		box-shadow: 0 0 8px 0px #555;
+	}
+
+	::-webkit-input-placeholder { color: #A5A8AB; }
+	:-moz-placeholder { color: #A5A8AB; }
+	::-moz-placeholder { color: #A5A8AB; }
+	:-ms-input-placeholder { color: #A5A8AB; }
+}
+
+// IE
+html.ie8, html.ie9 {
+
+	div.kapitallSignIn button,
+	div.kapitallSignIn button {
+		margin-top: 12px;
+	}
+
+	div.kapitallSignIn input[type="checkbox"] {
+		margin-top: 5px;
+	}
+
+}

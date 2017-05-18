@@ -1,0 +1,258 @@
+$green: #719f41;
+
+//styles
+body {
+	background-color: #104247;
+	color: #FFF;
+    font-family: Raleway, sans-serif;
+}
+
+div.roboContainer_mobile {
+    display: none;
+}
+
+#Header { border-bottom: 1px solid #414042; }
+#MainBody {
+	max-width: 1190px;
+	margin: 0 auto;
+	padding-top: 105px;
+}
+
+div.roboContainer {
+	color: #c8c8c8;
+	font-family: "Raleway", sans-serif;
+}
+
+.lColumn {
+	float: left;
+	width: 32%;
+	text-align: center;
+
+	img {
+		display: block;
+		margin: 0 auto;
+		width: 85%;
+		height: auto;
+	}
+}
+
+.rColumn {
+	float: right;
+	width: 64%;
+	padding: 20px 2% 0;
+
+	h2 {
+		font-size: 60px;
+		color: $green;
+	}
+
+	.roboDescription {
+		margin-top: 15px;
+		font-size: 18px;
+		line-height: 1.4;
+		font-weight: 200;
+
+        &.bold {
+            font-weight: 500;
+        }
+	}
+}
+
+
+ul.roboDetails {
+	margin-top: 40px;
+
+	li {
+		float: left;
+		width: 30%;
+		text-align: center;
+
+		&.matchmaker { padding: 0 5%; }
+	}
+
+	img {
+		height: 100px;
+		width: auto;
+	}
+
+	h4, p {
+		text-align: left;
+		font-size: 14px;
+	}
+
+	h4 {
+		margin-top: 20px;
+		font-weight: 600;
+		letter-spacing: 0.06em;
+		word-spacing: 2px;
+	}
+
+	p {
+		margin-top: 5px;
+		line-height: 1.25;
+	}
+}
+
+
+div.applyContainer {
+	margin-top: 60px;
+	position: relative;
+}
+
+button.apply {
+	display: block;
+	background-color: $green;
+	border: none;
+	border-radius: 3px;
+	width: 308px;
+	height: 46px;
+	padding: 0;
+	left: -4px; // to align it with the silver status
+	position: relative;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	font-family: "Raleway", sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+}
+
+a.faq {
+	display: block;
+	width: 35px;
+	height: 35px;
+	background: transparent url('../images/robo/robo_icon_faq.png') no-repeat;
+	position: absolute;
+	top: 5px;
+	left: 490px;
+}
+
+.disclaimer {
+    border-top: 1px solid #939597;
+    padding-top: 20px;
+    top: 690px;
+    font-family: Raleway,sans-serif;
+	display: none;
+	font-size: 9px;
+	color: #A2A2A2;
+	width: 1120px;
+	position: absolute;
+	margin-left: 2.25%;
+    font-weight: 300;
+
+	p { margin: 12px 0; line-height: 13px; }
+
+	a {
+		color: #35ADB2;
+		text-decoration: none;
+		font-weight: bold;
+
+		&:hover { text-decoration: underline; }
+	}
+}
+
+.chatLive {
+    display: block;
+    width: 120px;
+    height: 35px;
+    background: transparent url('../images/robo/chatLive.svg') no-repeat;
+    position: absolute;
+    top: 6px;
+    left: 345px;
+}
+
+
+div.roboContainer_mobile {
+    div.line {
+        border-top: 1px solid #939597;
+        width: 91%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        clear: both;
+        display: inline-block;
+    }
+    div.content{
+        text-align: left;
+        padding: 4vw;
+
+        div.title {
+            font-size: 8.5vw;
+            color: #719f41;
+            margin-bottom: 5vw;
+        }
+
+        div.sub-title{
+            padding: 15px 0;
+            font-size: 4vw;
+            color: #c7c7c7;
+        }
+        div.text {
+            color: #b0b6b7;
+            font-size: 3.5vw;
+            margin-bottom: 5vw;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    div.roboContainer { display: none; }
+    div.roboContainer_mobile {
+        display: inherit;
+        text-align: center;
+    }
+    body{    overflow-x: hidden; }
+    div.topSection {
+        margin-top: 30px;
+        img {
+            width: 37%;
+        }
+    }
+    button.apply{
+        display: table-row;
+        width: 91%;
+        height: 9vw;
+        z-index: 0;
+        font-size: 4vw;
+    }
+    div.applyContainer {
+        display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        zoom: 1.5;
+
+        > a {
+            position: relative;
+            float: left;
+            left: auto;
+            margin: 0 20px;
+        }
+    }
+
+    ul.roboDetails {
+        > li{
+            float: none;
+            width: auto;
+            padding: 0 20px 50px 20px !important;
+
+            h4{
+                color: #c7c7c7;
+                font-size: 27px;
+            }
+            p {
+                color: #b0b6b7;
+                font-size: 22px;
+            }
+        }
+        img {
+            height: 185px;
+        }
+    }
+
+    div.disclaimer{ width: 90%; }
+
+    #signUp_mobile{
+        display: inherit;
+    }
+}

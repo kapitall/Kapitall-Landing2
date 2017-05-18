@@ -1,0 +1,63 @@
+div#Hero {
+    background: transparent url('../images/hh-off2.png') no-repeat 0 0;
+
+    &.isOn {
+        background: transparent url('../images/hh-on2.png') 0 0 no-repeat !important;
+
+        #main-copy > * { display: none; }
+        #main-copy .showOnHappyHour { display: block; }
+    }
+
+    h2 {
+        display: block;
+        height: 300px;
+        width: 800px;
+        margin-left: 69px;
+        margin-top: 0;
+    }
+
+    #main-copy {
+        position: absolute;
+        top: 86px;
+        width: 520px;
+        right: 35px;
+
+        p {
+            color: #FFF;
+            line-height: 1.1em;
+            font-size: 16px;
+            padding: 0;
+            margin-top: 5px;
+        }
+
+        strong, span#tagline-time {
+            font-weight: normal;
+            color: #FBB040;
+        }
+
+        h1 {
+            text-decoration: none !important;
+            color: #FFF;
+            font-size: 44px;
+            text-align: left;
+            margin: 25px 0 0 0;
+            padding: 0;
+            font-family: 'ITCAvantGardeGothicProBold', 'Century Gothic', 'Calibri', 'Myriad Pro', 'Myriad', Arial, sans-serif;
+        }
+
+        .showOnHappyHour { display: none; }
+    }
+
+    a#learnMore {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+    }
+
+}
+
+div.kapitallSignIn {
+    left: 395px;
+    top: 190px;
+}

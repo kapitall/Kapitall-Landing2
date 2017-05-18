@@ -1,0 +1,164 @@
+//////// GLOBAL
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway-Thin.ttf"),
+  	url('../font/Raleway/Raleway-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway-Light.ttf"),
+  	url('../font/Raleway/Raleway-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway-Medium.ttf"),
+  	url('../font/Raleway/Raleway-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway-Bold.ttf"),
+    url('../font/Raleway/Raleway-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html { font-size: 18px; }
+
+a { text-decoration: none; }
+
+.column{ display: inline-block; }
+
+.semiBold { font-weight: 600;}
+
+.txt { font-weight: 300; }
+
+sup { font-size:xx-small; vertical-align:top; }
+
+h1{
+	color: #b19374;
+	font-size: 3.2633vw;
+	font-weight: 300;
+	margin-bottom: 1.3888rem;
+}
+
+// // /////// STYLE
+
+body {
+	background-color: #e2daba;
+	color: #FFF;
+	font-family: Raleway, Arial;
+
+	#Header { height: 40px; }
+	#Header .topBar{ height: 40px; border-bottom: none; }
+}
+
+
+#MainBody {
+	margin: 0 auto;
+	max-width: 1280px;
+
+	div#GuitarBg {
+		background: #e2daba url(../images/ss/mainImage.jpg) no-repeat 0 0;
+		background-size: contain;
+		height: 758px;
+		position: absolute;
+		width: 1280px;
+		z-index: 1;
+	}
+
+	#MainContainer{
+		border-bottom: .5px solid #949698;
+		color: #424143;
+		font-size: 68vw;
+		font-weight: 300;
+		margin: 2.22em auto;
+		position: relative;
+		width: 1120px;
+
+		div.right-column {
+			float: right;
+			margin-top: 3.83rem;
+			position: relative;
+			width: 51.15%;
+			max-width: 565px;
+			z-index: 2;
+
+			div { line-height: 1.44rem; }
+		}
+
+		div.intro { margin-bottom: 1.9444em; }
+
+		p.bold{ margin: 2.222rem 0; }
+
+		.features div {
+			margin-bottom: 1.3888em;
+			max-width: 565px;
+			img { width: 59px; display: inline-block; float: left; margin-right: 1.111em;}
+			img.partyHard { margin-bottom: 4em; }
+		}
+
+		div.ctaContainer {
+			height: 38px;
+			margin: 2.222rem 0 3.6rem;
+
+			div.socialContainer {
+				float: right;
+				padding-top: .75rem;
+				text-align: center;
+				width: 15%;
+
+				img.social {
+				display: inline-block;
+				width: 24px;
+				}
+			}
+
+			div.buttonContainer {
+				float: left;
+				width: 80%;
+
+				button {
+					background-color:#f07d2e;
+					border: none;
+					border-radius:4px;
+					color: white;
+					display:block;
+					font-size:1.1em;
+					height: 38px;
+					margin: 0 auto;
+					outline: none;
+					text-transform: uppercase;
+					width: 242px;
+				}
+			}
+		}
+
+		.disclaimer {
+			clear: both;
+			color: #828282;
+			font-size: .68vw;
+			font-weight: 200;
+			line-height: .8333rem;
+			padding-bottom: 1.667rem;
+
+			p { padding: .3em 0; }
+		}
+	}
+}
+
+
+//////////////////////////////////////////////////////////////////////
+////
+////  MEDIA QUERIES
+////
+//////////////////////////////////////////////////////////////////////
+

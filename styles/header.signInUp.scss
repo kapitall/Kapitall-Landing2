@@ -1,0 +1,760 @@
+$backgroundColor: #333;
+$transitionSignInTime: 500ms;
+
+$facebookColor: #25557C;
+$googleColor: #DF5544;
+$twitterColor: #68B8CE;
+
+.sprite { background-image: url('../images/sprite.png'); background-position: 100px 100px; background-repeat: no-repeat; }
+
+#Header {
+	background-color: rgba($backgroundColor,0.95);
+	color: #C1C1C1;
+	border-bottom: 1px solid #444444;
+	height: 35px;
+	left: 0;
+	min-height: 35px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+
+	transition: height 500ms;
+	-webkit-transition: height 500ms; /* Safari */
+
+	.topBar {
+		border-bottom: 1px solid #58585B;
+		height: 38px;
+	}
+
+	h1 {
+		background-position: 0px 0px;
+		cursor: pointer;
+		height: 19px;
+		left: 10px;
+		overflow: hidden;
+		position: absolute;
+		text-indent: 125px;
+		top: 9px;
+		width: 111px;
+	}
+
+	ul { margin: 9px 25px 0 0; }
+
+	li {
+		display: inline-block;
+		padding-left: 10px;
+		text-transform: uppercase;
+	}
+
+	a {
+		color: #FFF;
+		font-size: 12px;
+		text-decoration: none;
+
+		&:hover { text-decoration: underline; }
+	}
+
+	.subText, a.subText {
+		color: #C1C1C1;
+		cursor: pointer;
+		font-size: 12px;
+	}
+
+	button {
+		background-color: #34ADB1;
+		border: none;
+		border-radius:4px;
+		color: #E1E1E1;
+		cursor: pointer;
+		display: block;
+		font-size: 14px;
+		padding: 7px 30px;
+		text-transform: uppercase;
+
+		-moz-radius:4px;
+		-webkit-radius:4px;
+	}
+
+	input {
+		background-color: #CCC;
+		color: #666;
+		display: block;
+		font-size: 14px;
+		margin-right: 15px;
+		padding: 5px;
+	}
+
+	input[type="checkbox"] {
+		display: inline-block;
+		margin-right: 5px;
+		margin-left: 0;
+		vertical-align: top;
+	}
+
+	.arrow {
+		border-bottom: 5px solid transparent;
+		border-left: 5px solid #FFF;
+		border-top: 5px solid transparent;
+		display: inline-block;
+		margin-right: 3px;
+		position: relative;
+
+		transition: border 500ms;
+		-webkit-transition: border 500ms; /* Safari */
+	}
+
+	&.signInOpen .arrow {
+		border-bottom: 0px solid transparent;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #FFF;
+		display: inline-block;
+		margin-right: 3px;
+		top: -3px;
+
+		transition: border $transitionSignInTime;
+		-webkit-transition: border $transitionSignInTime; /* Safari */
+	}
+
+	&.signInOpen {
+		height: 160px;
+
+		transition: height $transitionSignInTime;
+		-webkit-transition: height $transitionSignInTime; /* Safari */
+	}
+
+	&.signUpOpen {
+		height: 100%;
+
+		transition: height 1s;
+		-webkit-transition: height 1s; /* Safari */
+	}
+}
+
+#WhyKapitallToggle:hover,
+#ChatToggle:hover,
+#SignInToggle:hover { cursor: pointer; }
+
+#WhyKapitallToggle:hover a,
+#ChatToggle:hover a,
+#SignInToggle:hover a { text-decoration: underline; }
+
+#WhyKapitallToggle span {
+	background-position: -119px 0px;
+	display: inline-block;
+	height: 13px;
+	position: relative;
+	top: 3px;
+	width: 13px;
+}
+
+#ChatToggle span {
+	background-position: -152px -1px;
+	display: inline-block;
+	height: 10px;
+	position: relative;
+	top: 1px;
+	width: 10px;
+}
+#ChatToggle.online span { background-position: -135px -1px; }
+
+#SignOutMessage {
+	display: none;
+	margin: 10px 10px 0 0;
+}
+
+
+
+#Header .kapitallSignIn {
+	display: none;
+	float: right;
+	margin: 15px 20px 0 0;
+
+	.error {
+		margin-top: -8px;
+		color: #ff3505;
+	}
+
+	.fieldItem {
+		display: inline-block;
+		text-align: left;
+		vertical-align: top;
+
+		&.center { text-align: center; }
+	}
+
+	form.primaryLoginForm { border-bottom: 1px solid #58585B; }
+
+	.socialLoginForm {
+		position: relative;
+		margin-top: 10px;
+		height: 30px;
+
+		label {
+			position: absolute;
+			right: 140px;
+			bottom: 6px;
+			text-transform: uppercase;
+		}
+	}
+
+	.socialFieldItems {
+		float: right;
+
+		button {
+			background: transparent url('../images/social_login_sprite.png');
+			border-radius: none;
+			width: 30px;
+			height: 30px;
+			display: inline-block;
+			margin: 0px 5px;
+			padding: 0px;
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+
+			&.signInFacebook { background-position: -10px -20px; }
+			&.signInGoogle { background-position: -10px -70px; }
+			&.signInTwitter {
+				background-position: -10px -120px;
+				margin-right: 0px;
+			}
+		}
+	}
+}
+
+#Header .signUpPrompt {
+	display: none;
+	position: absolute;
+	top: 102px;
+	margin: 0px 0px 0px 20px;
+
+	span, button {
+		display: inline-block;
+		color: #ffffff;
+	}
+
+	span {
+		margin-right: 5px;
+		text-transform: uppercase;
+	}
+
+	button {
+		background-color: #626365;
+		padding: 7px 10px;
+	}
+}
+
+#Header.signInOpen .kapitallSignIn,
+#Header.signInOpen .signUpPrompt { display: block; }
+
+#SignUp {
+	display: none;
+	left: 50%;
+	margin: -160px 0 0 -350px;
+	position: absolute;
+	top: 50%;
+	width: 750px;
+
+	.whyKapitallInfo { display: none; }
+	&.whyKapitall {
+		margin-left: -450px;
+		width: 900px;
+
+		.whyKapitallInfo { display: block; }
+		.info { display: none; }
+	}
+
+	&.default {
+		.info { float: left; }
+
+		.formCol {
+			float: right;
+
+			.kapitallSignUp {
+				&.optionsView > div.signUpInfo { display: none; }
+				&.optionsView > div.signUpOptions { display: block; }
+			}
+		}
+	}
+
+	&.product {
+		width: 645px;
+
+		.info { display: none; }
+
+		.formCol {
+			.signUpOptions button.defaultOption { display: none; }
+
+			.kapitallSignUp {
+				&.optionsView > div.signUpInfo {
+					display: block;
+					float: left;
+				}
+				&.optionsView > div.signUpOptions {
+					display: block;
+					float: right;
+				}
+			}
+		}
+	}
+
+	.info {
+		width: 430px;
+
+		.item {
+			margin: 20px 0 10px 0px;
+
+			.sprite {
+  				height: 56px;
+  				margin-right: 15px;
+  				width: 56px;
+			}
+			.title { font-weight: bold; }
+			.txt { padding-top: 9px; }
+
+			&.practice {
+				.title { color: #2085BC; }
+				.sprite { background-position: -173px 0; }
+			}
+			&.compete {
+				.title { color: #F9AA1E; }
+				.sprite { background-position: -173px -79px; }
+			}
+			&.trade {
+				.title {color: #44B5B6; }
+				.sprite { background-position: -173px -166px; }
+			}
+
+			&.robo {
+				.title { color: #82B044; }
+				.sprite {
+					background: transparent url('https://s3.amazonaws.com/kapitall/test/robo.png') no-repeat;
+					background-size: contain;
+					background-position: initial;
+				}
+			}
+
+			&.ira {
+				.title { color: #F6989A; }
+				.sprite {
+					background: transparent url('https://s3.amazonaws.com/kapitall/test/ira.png') no-repeat;
+					background-size: contain;
+					background-position: initial;
+				}
+			}
+		}
+	}
+
+	.regSecureInfo {
+		background-color: white;
+		display: inline-block;
+		padding: 2px 0 5px 0;
+		margin-top: 25px;
+
+		.verisign img { width: 50px; }
+		.truste img{ width: 100px; margin-bottom: 5px; }
+	}
+
+	a.headerPrivacy {
+		display: block;
+		text-decoration: none;
+		color: #34ADB1;
+		margin-top: 5px;
+	}
+
+	.formCol {
+		position: relative;
+		top: 25px;
+
+		.kapitallSignUp {
+			min-width: 264px;
+
+			> div {
+				border: 1px solid #58585B;
+				padding: 20px 18px 25px 18px;
+			}
+		}
+
+		.signUpInfo button { background-color: #F8AA1F; }
+
+		.signUpInfo > button[data-target="options"] {
+			background: transparent url('../images/social_login_sprite.png') no-repeat -37px -218px;
+			position: absolute;
+			top: 22px;
+			right: 12px;
+			width: 25px;
+			height: 25px;
+			padding: 0;
+		}
+
+		.signUpInfo { display: block; }
+
+		.signUpOptions {
+			display: none;
+
+			button {
+				display: block;
+				width: 250px;
+				text-transform: uppercase;
+				position: relative;
+				padding-left: 45px;
+				text-align: left;
+				margin-left: auto;
+				margin-right: auto;
+
+				&:before {
+					content: "";
+					display: block;
+					width: 24px;
+					height: 24px;
+					position: absolute;
+					top: 3px;
+					left: 10px;
+					background: transparent url('../images/social_login_sprite.png') no-repeat;
+				}
+
+				&.facebookOption {
+					background-color: $facebookColor;
+					&:before { background-position: -63px -23px; }
+				}
+				&.googleOption {
+					background-color: $googleColor;
+					&:before { background-position: -63px -73px; }
+				}
+				&.twitterOption {
+					background-color: $twitterColor;
+					&:before { background-position: -63px -123px; }
+				}
+
+				&.defaultOption {
+					background: none;
+					text-transform: none;
+					font-size: 13px;
+					color: #34ADB1;
+					padding: 0px;
+					text-align: center;
+
+					&:before { background: inherit; }
+				}
+			}
+		}
+
+		.signUpAvatar {
+			height: 40px;
+
+			.signUpIcon {
+				background: transparent url('../images/social_login_sprite.png') no-repeat -30px -175px;
+				border-radius: 50%;
+				height: 40px;
+				width: 40px;
+				overflow: hidden;
+				display: block;
+				float: left;
+				margin-right: 10px;
+
+				> img {
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			h3.socialTitle {
+				color: #fff;
+				font-size: 18px;
+				padding-top: 6px;
+				text-transform: capitalize;
+
+				span {
+					text-transform: uppercase;
+					font-size: 13px;
+					display: block;
+					color: #9f9f9f;
+				}
+			}
+		}
+
+		input {
+			margin: 10px 0 5px 0;
+			width: 254px;
+			border: none;
+			background-color: #444;
+
+			&[type="checkbox"] {
+				margin: 3px 3px 3px 0;
+				width: auto;
+			}
+		}
+
+		button {
+			margin-top: 15px;
+			padding: 7px 14px;
+			display: inline-block;
+		}
+
+		.actions { text-align: center; }
+	}
+
+	.banner {
+		background: url(../images/joinKapitall.png) no-repeat 0 0;
+		height: 45px;
+		width: 645px;
+	}
+}
+
+a#closeSignUp {
+	display: none;
+	width: 40px;
+	height: 40px;
+	background: transparent url('../images/cross.svg') no-repeat 0 0;
+	background-size: contain;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	opacity: 0.2;
+}
+
+.signUpOpen {
+	#SignUp, a#closeSignUp { display: block; }
+}
+
+#EmailConfirmationMessage {
+	background-color: $backgroundColor;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+	.title {
+		background: url(../images/taglines.png) no-repeat -7px -48px;
+		width: 617px;
+		height: 94px;
+		margin-left: 130px;
+	}
+
+	.content {
+		font-size: 14px;
+		padding-top: 15px;
+		margin-left: 130px;
+
+		a { color: #33AEB4; font-size: 14px; }
+		.emailAddress { font-style: italic; }
+		p { padding-bottom: 15px; line-height: 22px; }
+
+	}
+
+	.kapitallGuy {
+		background-position: -252px -1px;
+		height: 213px;
+		width: 97px;
+		float: left;
+	}
+}
+
+
+
+
+/************************************ Mobile ***********************************/
+
+.header {
+    position: fixed !important;
+    background-color: #404142;
+    height: 50px !important;
+    width: 100% !important;
+}
+
+.kapitallLogo {
+    width: 123px !important;
+    height: 20.5px !important;
+    background: url(Assets/kapitall_logo.svg) 0 0 no-repeat;
+    margin: 14.5px 0px 14.5px 20px !important;
+    position: absolute !important;
+}
+
+.navigation {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 12px !important;
+    list-style: none;
+}
+
+.pillButtons a, .pillButtons_mobile a {
+    border-radius: 3px;
+    color: #31adb3;
+}
+a.signUpButton, a.signUpButton_mobile {
+    color: #e2e2e2;
+    background-color: #31adb3;
+}
+a.signUpButton:hover, a.signUpButton_mobile:hover {
+    background-color: #d8574e;
+}
+a.signInButton, a.signInButton_mobile {
+    border: 1px solid;
+}
+a.signInButton:hover, a.signInButton_mobile:hover {
+    color: #d8574e;
+}
+
+.nonPillButtons a, .nonPillButtons_mobile a {
+    color: #999999;
+}
+.nonPillButtons a:hover, .nonPillButtons_mobile a:hover {
+    color: #31adb3;
+}
+
+
+/*DESKTOP LAYOUT*/
+.desktopLayout {
+    float: right;
+    padding: 18px 20px 18px 0px;
+    width: 100%;
+
+}
+
+.signUpHolder {
+    float: right;
+    padding-left: 10px;
+}
+a.signUpButton {
+    padding: 6px 14px 5px;
+}
+.signInHolder {
+    float: right;
+    padding-left: 30px;
+}
+a.signInButton {
+    padding: 5.5px 16px 4px;
+}
+
+.nonPillButtons a {
+    float: right;
+}
+.greyLinks {
+    padding-left: 15px;
+    padding-bottom: 0px;
+}
+
+
+/*MOBILE LAYOUT*/
+.mobileLayout {
+    display: none;
+    /*float: right;*/
+    width: 165px;
+    overflow: hidden;
+    position: fixed;
+    left: calc(100% - 40px);
+
+    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition-timing-function: ease;
+    transform: translateX("left");
+    -webkit-transform: translateX("left");
+    -moz-transform: translateX("left");
+}
+.mobileLayout.active {
+    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition-timing-function: ease;
+    transform: translateX(-125px);
+    -webkit-transform: translateX(-125px);
+    -moz-transform: translateX(-125px);
+}
+
+.mobileNavigation {
+    padding: 18px 0px 0px 20px;
+}
+
+.mobileMenu {
+    float: right;
+    height: 100vh;
+    width: 125px;
+    background-color: #404142;
+}
+
+.nonPillButtons_mobile a {
+    float: left;
+}
+.greyLinks_mobile {
+    padding-bottom: 10px;
+}
+
+.signUpHolder_mobile {
+    float: left;
+}
+a.signUpButton_mobile {
+    padding: 6px 18.5px 5px;
+}
+.signInHolder_mobile {
+    float: left;
+    padding-bottom: 21px;
+    padding-top: 23px;
+}
+a.signInButton_mobile {
+    padding: 5.5px 19.5px 4px;
+}
+
+/*MOBILE MENU ICON*/
+.menuIcon {
+    float: left;
+    position: absolute;
+    top: 18px;
+}
+#hamburger-icon {
+    width: 20px;
+    height: 12px;
+    position: relative;
+    display: block;
+}
+#hamburger-icon .line {
+    display: block;
+    background: #999999;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    /*left: 0;
+border-radius: 1px;*/
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+#hamburger-icon .line.line-1 {
+    top: 0;
+}
+#hamburger-icon .line.line-2 {
+    top: 50%;
+}
+#hamburger-icon .line.line-3 {
+    top: 100%;
+}
+#hamburger-icon:hover .line-1, #hamburger-icon:focus .line-1 {
+    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+    -moz-transform: translateY(-1px);
+}
+#hamburger-icon:hover .line-3, #hamburger-icon:focus .line-3 {
+    transform: translateY(1px);
+    -webkit-transform: translateY(1px);
+    -moz-transform: translateY(1px);
+}
+#hamburger-icon.active .line-1 {
+    transform: translateY(6px) translateX(0) rotate(45deg);
+    -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
+    -moz-transform: translateY(6px) translateX(0) rotate(45deg);
+}
+#hamburger-icon.active .line-2 {
+    opacity: 0;
+}
+#hamburger-icon.active .line-3 {
+    transform: translateY(-6px) translateX(0) rotate(-45deg);
+    -webkit-transform: translateY(-6px) translateX(0) rotate(-45deg);
+    -moz-transform: translateY(-6px) translateX(0) rotate(-45deg);
+}
+
+

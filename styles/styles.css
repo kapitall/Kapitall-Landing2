@@ -1,0 +1,134 @@
+
+#session-expired {
+display: none;
+text-align:center !important;
+	margin-bottom: 15px !important;
+	color: #ff3505 !important;
+}
+section.parallax.intro {
+        margin-top: 71px !important;
+}
+section.parallax.intro.bscreen {
+	margin-top: 0px !important;
+}
+div.promotion {
+  display: none !important;
+}
+#ab-test-b {
+  margin-top: 35px !important;
+  background-image: url(../images/hero-bg.jpg) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat!important;
+  height: 500px!important;
+  font-family: 'Raleway', sans-serif !important;
+}
+
+#ab-test-b #ab-test-b-text-container {
+  float: right !important;
+  padding-top: 175px !important;
+  padding-right: 25px !important;
+  width: 400px !important;
+  text-align: center !important;
+}
+
+#ab-test-b #ab-test-b-text-container .ab-test-text-title {
+  font-weight: 200 !important;
+  font-size: 2em !important;
+  text-transform: uppercase !important;
+  vertical-align: middle !important;
+  color: #ffffff !important;
+}
+
+#ab-test-b #ab-test-b-text-container .ab-test-text-title-line {
+  color: #ffffff !important;
+  line-height: 24px !important;
+  margin-bottom: 15px !important;
+text-align: left;
+}
+
+#ab-test-b #ab-test-b-text-container .ab-test-drive-btn {
+  color: #ffffff;
+cursor: pointer;
+  background-color: #3fbfba;
+  height: 37px;
+  padding: 5px 25px;
+  font-size: 14px;
+  border: 0px;
+}
+
+#ab-test-banner {
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 1001 !important;
+    background-image: url(../images/hero-banner.jpg) !important;
+    background-origin: content-box !important;
+    background-size: 100% !important;
+  margin-top: 35px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  background-color: #257EBE !important;
+  color: #ffffff !important;
+  line-height: 70px !important;
+  font-family: 'Raleway', sans-serif !important;
+  width: 100% !important;
+}
+
+#ab-test-banner .ab-inline {
+  display: inline-block !important;
+}
+
+#ab-test-banner .title {
+  font-weight: 200 !important;
+  min-width: 300px !important;
+  width: 30% !important;
+  font-size: 2em !important;
+  text-transform: uppercase !important;
+  vertical-align: middle !important;
+}
+
+#ab-test-banner .title-line {
+  font-weight: 200 !important;
+  vertical-align: middle !important;
+  font-size: 14px !important;
+  min-width: 410px !important;
+  text-align: center !important;
+  width: 49% !important;
+}
+
+#ab-test-banner b {
+  font-weight: 600 !important;
+}
+
+#ab-test-banner i {
+  font-family: 'Raleway', sans-serif !important;
+  font-style: italic !important;
+}
+
+#ab-test-banner .ab-test-drive-btn {
+width: 200px;
+cursor:pointer;
+  color: #257EBE;
+  background-color: #ffffff;
+  height: 37px;
+  padding: 5px 25px;
+  font-size: 14px;
+  border: 0px;
+}
+
+#ab-test-banner #ab-test-drive-btn-container {
+  min-width: 185px !important;
+  width: 20% !important;
+  text-align: right !important;
+}
+@media (max-width: 1045px) {
+	#ab-test-banner {
+		top: 65px !important;
+	}
+#ab-test-banner .title {
+	width: 100% !important;
+}
+#ab-test-banner .title-line {
+width: 100% !important;
+text-align: left;
+}
+}

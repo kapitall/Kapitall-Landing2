@@ -1,0 +1,211 @@
+//////// GLOBAL
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway-Thin.ttf"),
+  	url('../font/Raleway/Raleway-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway-Light.ttf"),
+  	url('../font/Raleway/Raleway-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway-Medium.ttf"),
+  	url('../font/Raleway/Raleway-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway-Bold.ttf"),
+    url('../font/Raleway/Raleway-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+	font-family: Raleway,Arial;
+	-webkit-text-size-adjust: 100%;
+	}
+
+a { text-decoration: none; }
+
+.column{ display: inline-block; }
+
+.semiBold { font-weight: 600;}
+
+.txt { font-weight: 300; }
+
+sup { font-size:.55rem !important; vertical-align: top !important; }
+
+h1{
+	color: #b19374;
+	font-size: 3.75vw;
+	font-weight: 300;
+	margin-bottom: 1.5625vw;
+}
+
+// // /////// STYLE
+
+body {
+	background-color: #e2daba;
+	color: #FFF;
+	font-family: Raleway, Arial;
+
+	#Header { height: 50px;  }
+	#Header .topBar{ height: 50px; border-bottom: none; }
+}
+
+
+#MainBody {
+	margin: 50px auto 0 auto;
+	max-width: 1280px;
+	position: relative;
+
+	div#GuitarBg {
+		background: #e2daba url(../images/ss/mainImage_>800px.jpg) no-repeat 0 0;
+		background-size: cover;
+		height: 59.21875vw;
+		margin: 0 auto;
+		max-height: 59.21875vw;
+		max-width: 1280px;
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+
+		&::after{
+			background-color: #bbb8a9;
+			content: '';
+			height: 1px !important;
+			left: 50%;
+			margin-left: -43.74vw;
+			max-width: 1120px;
+			position: absolute;
+			top: 59.25vw;
+			width: 87.5vw;
+		}
+	}
+
+	#MainContainer{
+		color: #424143;
+		font-size: 1.40625vw;
+		font-weight: 300;
+		left: 50%;
+		margin: 2.578125vw 0 0 -43.74vw;
+		position: absolute;
+		width: 87.5vw;
+		max-width: 1120px;
+
+		div.left-column {
+			width: 48%;
+		}
+
+		div.right-column {
+			float: right;
+			margin-top: 2.734375vw;
+			position: relative;
+			width: 51.15%;
+			z-index: 2;
+
+			h1 {margin-bottom: 1.5625vw; font-size: 3.75vw; }
+
+			div { line-height: 1.875vw; }
+		}
+
+		div.intro { margin-bottom: 2.734375vw; min-height: 5.625vw;}
+
+		p.bold{ margin: 2.96875vw 0; }
+
+		.features div {
+			margin-bottom: 1.953125vw;
+			min-height:3.515625vw;
+
+			&.partyHard { min-height: 7.5vw; }
+
+			img { width: 4.609375vw; display: inline-block; float: left; margin-right: 1.111em;}
+			img.partyHard { padding-bottom: 3.90625vw;}
+		}
+
+		div.ctaContainer {
+			height: 0;
+			margin: 3.28125vw 0;
+
+			div.spacer{
+				display: inline-block;
+				float: left;
+				padding-top: 1.09375vw;
+				text-align: right;
+				width: 15%;
+			}
+
+			div.socialContainer {
+				display: inline-block;
+				float: right;
+				padding-top: 1.09375vw;
+				text-align: right;
+				width: 15%;
+
+				img.social {
+				display: inline-block;
+				width: 1.953125vw;
+				}
+
+				img.fb { padding-right: .15vw !important; }
+			}
+
+			div.buttonContainer {
+				display: inline-block;
+				text-align: center;
+				width: 70%;
+				button.pageMainButton{
+					background-color:#f07d2e;
+					border: none;
+					border-radius: 3px;
+					color: white;
+					clear: both;
+					font-size:1.40625vw;
+					height: 2.96875vw;
+					max-height: 38px;
+					outline: none;
+					position: relative;
+					text-transform: uppercase;
+					width: 18.90625vw;
+					max-width: 242px;
+				}
+
+			}
+		}
+
+		p.astriskDisclaimer{
+				padding-top: 3.28125vw;
+				padding-bottom: 1.9140625vw;
+		}
+
+		div.disclaimer {
+			padding-bottom: 0.5vw;
+			padding-top: 1.71875vw;
+		}
+
+		.disclaimer {
+			clear: both;
+			color: #828282;
+			font-weight: 400;
+			line-height: .8333rem;
+
+			p { padding: 0.546875vw 0; }
+			a { text-decoration: none; color: #31adb3; }
+		}
+
+        button.pageMainButton {
+            cursor: pointer;
+        }
+	}
+}

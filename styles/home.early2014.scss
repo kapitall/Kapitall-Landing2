@@ -1,0 +1,90 @@
+body {
+	background-color: #000;
+	color: #FFF;
+}
+
+input {
+	background-color: #CCC;
+	color: #666;
+	padding: 5px;
+	font-size: 14px;
+}
+
+.error {
+	color: #d84e00;
+	display: none;
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+
+.sprite { background-image: url('../images/sprite.png'); background-position: 100px 100px; background-repeat: no-repeat; }
+
+
+#MainBody {
+	height: 1100px;
+	min-height: 400px;
+	min-width: 765px;
+	padding-top: 35px;
+	position: relative;
+	background-color: #ADCDCB;
+
+	transition: height 500ms;
+	-webkit-transition: height 500ms; /* Safari */
+}
+
+#BrandVideo {
+	background: url(../images/video_holder.png) -19px 34px no-repeat;
+	height: 525px;
+	left: 50%;
+	margin-left: -430px;
+	position: absolute;
+	width: 860px;
+
+	transition: margin-top 500ms;
+	-webkit-transition: margin-top 500ms; /* Safari */
+
+	.mainTagLine {
+		background: url(../images/generic_homepage_headline.png) 0px 3px no-repeat;
+		height: 48px;
+		left: 50%;
+		margin-left: -350px;
+		margin-top: 5px;
+		position: relative;
+		width: 700px;
+	}
+
+	iframe {
+		left: 110px;
+		position: relative;
+		top: 28px;
+	}
+}
+
+#BrandImage { 
+	background-image: url('../images/ICONS_LANDING.png');
+	background-position: -12px -11px;
+	background-repeat: no-repeat;
+	bottom: -4px;
+	height: 567px;
+	position: absolute;
+	right: 0;
+	width: 693px;
+}
+
+#BrandButton {
+	background-color: transparent;
+	background-image: url(../images/joinNowRed.png);
+	background-position: -2px -3px;
+	bottom: 5px;
+	cursor: pointer;
+	height: 51px;
+	left: 50%;
+	margin-left: -129px;
+	position: absolute;
+	width: 258px;
+	z-index: 9;
+
+	border-radius: 0px;
+	-moz-radius: 0px;
+	-webkit-radius: 0px;
+}

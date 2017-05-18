@@ -1,0 +1,638 @@
+// Background Colors
+$white: #ffffff;
+$black: #000000;
+//blue
+$darkBlue: #09537C;
+$lightBlue: #afd3d3;
+//gray
+$darkGray: #2f2f31;
+$darkGraySec: #414042;
+$paleGray: #d3d3d3;
+//red
+$salmon: #e05544;
+//yellow
+$darkYellow: #db9028;
+$mediumYellow: #faac1f;
+//aqua
+$darkAqua: #1b7f82;
+$mediumAqua: #3cbfbb;
+$lightAqua: #adcdcb;
+
+
+main, section, article, nav {
+	display: block;
+}
+
+html, body {
+	height: 100%;
+}
+
+/***** PARALLAX SECTIONS *****/
+
+// Global Styles
+section.parallax-section {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+
+	.content-container, .content {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+	}
+
+	.content {
+		text-align: center;
+		font-size: 0;
+
+		// force hardware acceleration
+		-webkit-transform: translate3d(0,0,0);
+   		-moz-transform: translate3d(0,0,0);
+    	-ms-transform: translate3d(0,0,0);
+     	-o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+
+		// pseudo element for vertical centering
+		&:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+
+		.sub-content {
+			display: inline-block;
+			position: relative;
+			height: auto;
+			text-align: center;
+			vertical-align: middle;
+
+			.text-container {
+				font-family: 'texgyreadventor', sans-serif;
+				text-rendering: optimizeLegibility;
+				-webkit-font-smoothing: antialiased;
+				display: block;
+				margin: 42px 0 0;
+
+				span {
+					display: block;
+
+					&.txt { font-size: 30px; }
+
+					&.sub-txt {
+						font-size: 15px;
+						margin-top: 15px;
+					}
+				}
+			}
+
+			img {
+				display: inline-block;
+				width: 100%;
+				height: auto;
+
+				&.icon {
+					height: 144px;
+					width: auto;
+				}
+			}
+		}
+	}
+}
+
+// Section Styles
+section.parallax-section {
+
+	&.intro {
+		z-index: 3;
+		background-color: $salmon;
+	}
+
+	&.buzz {
+		height: 400%;
+		z-index: 2;
+		background-color: $darkGray;
+
+		.content-container {
+			height: 25%;
+
+			&.crowd .content {
+				text-align: center;
+				.parallax-item {
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					height: 240px;
+					text-align: center;
+
+					img {
+						width: auto;
+						height: 100%;
+						position: relative;
+						top: 50%;
+						display: block;
+						margin: 0 auto;
+					}
+
+					.quotes {
+						position: absolute;
+						top: 0;
+						height: 100%;
+						width: 50%;
+
+						img[class*='quote'] {
+							position: absolute;
+							display: block;
+							width: auto;
+							opacity: 0;
+							 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+							-webkit-transition: all 200ms ease-in-out;
+							-moz-transition: all 200ms ease-in-out;
+							-ms-transition: all 200ms ease-in-out;
+							-o-transition: all 200ms ease-in-out;
+							transition: all 200ms ease-in-out;
+						}
+
+						.quote-finance { height: 150px; top: -30px; right: -210px; bottom: auto; left: auto; }
+						.quote-mashable { height: 100px; top: auto; right: -320px; bottom: -170px; left: auto; }
+						.quote-readwrite { height: 120px; top: auto; right: 170px; bottom: 0px; left: auto; }
+						.quote-huffington { height: 120px; top: 90px; right: -345px; bottom: auto; left: auto; }
+						.quote-usa { height: 140px; top: auto; right: 170px; bottom: -185px; left: auto; }
+						.quote-bloomberg { height: 110px; top: 5px; right: 40px; bottom: auto; left: auto; }
+						.quote-pc { height: 110px; top: auto; right: -60px; bottom: -230px; left: auto; }
+
+						img.visible {
+							opacity: 1;
+							 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+							-moz-transform: scale(1.15);
+							-webkit-transform: scale(1.15);
+							-o-transform: scale(1.15);
+							-ms-transform: scale(1.15);
+							transform: scale(1.15);
+						}
+
+
+					}
+
+				}
+			}
+
+			&.two {
+				top: 25%;
+
+				.text-container { opacity: 0; }
+			}
+		}
+	}
+
+	&.modes {
+		background-color: $salmon;
+		z-index: 3;
+		.sub-content { max-width: none; }
+	}
+
+	&.practice {
+		background-color: $darkBlue;
+		z-index: 4;
+		.sub-content { max-width: none; }
+
+		.text-container { text-align: left; }
+	}
+
+	&.tournament {
+		background-color: $darkYellow;
+		z-index: 5;
+		.sub-content { max-width: none; }
+	}
+
+	&.live {
+		background-color: $darkAqua;
+		z-index: 6;
+		.sub-content { max-width: none; }
+
+		.text-container { text-align: right; }
+	}
+
+	&.articles {
+		background-color: $salmon;
+		z-index: 7;
+
+		.sub-content {
+			max-width: none;
+			width: 80%;
+		}
+
+		&.two .content {
+			background-color: $darkBlue;
+			top: 100%;
+		}
+	}
+
+	&.tools {
+		background-color: $darkGray;
+		z-index: 8;
+
+		.content-container {
+
+			.sub-content .text-container:before {
+			    content: "";
+			    display: block;
+			    height: 340px;
+			    width: 300px;
+			    margin-bottom: 30px;
+			}
+
+			&.gear-container .sub-content .gear {
+				position: relative;
+				display: inline-block;
+				background: transparent url('../images/parallax/gear_turn.png') no-repeat 0 0;
+				width: 300px;
+				height: 340px;
+			}
+
+			&.one .sub-content .sub-txt {
+				margin-top: 12px;
+				font-size: 30px;
+			}
+		}
+	}
+
+	&.play {
+		background-color: $salmon;
+		z-index: 9;
+	}
+
+	&.earn {
+		background-color: $mediumAqua;
+		height: 500%;
+		z-index: 10;
+
+		.content-container {
+			height: 20%;
+
+			&.two { top: 20%; }
+			&.three {
+				top: 40%;
+				.sub-content img.icon { left: 75%; transform: rotate(3deg); }
+			}
+			&.four {
+				top: 60%;
+				.sub-content img.icon { right: 75%; transform: rotate(-3deg); }
+			}
+
+			.content .sub-content img.icon { position: relative; }
+			.content .sub-content img.icon:not(.koin) {
+				opacity: 0;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+				transition: all 200ms ease-in;
+			}
+			.content .sub-content img.icon.in-place {
+				opacity: 1;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+				top: 0px !important;
+			}
+			.content .sub-content img.icon.dropped {
+				-moz-transform: scale(0.5) translateX(100%);
+				-webkit-transform: scale(0.5) translateX(100%);
+				-o-transform: scale(0.5) translateX(100%);
+				-ms-transform: scale(0.5) translateX(100%);
+				transform: scale(0.5) translateX(100%);
+				top: 800px !important;
+				opacity: 1;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+				&.lessons {
+					-moz-transform: translateX(-75%);
+					-webkit-transform: translateX(-75%);
+					-o-transform: translateX(-75%);
+					-ms-transform: translateX(-75%);
+					transform: translateX(-75%);
+				}
+			}
+
+			&.two .sub-content img.icon,
+			&.three .sub-content img.icon,
+			&.four .sub-content img.icon { top: -800px; }
+
+			&.two .sub-content .text-container,
+			&.three .sub-content .text-container,
+			&.four .sub-content .text-container {
+				opacity: 0;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			}
+		}
+	}
+
+	&.kstore {
+		height: 200%;
+		background-color: $mediumYellow;
+		z-index: 11;
+
+		.content-container { height: 50%; }
+
+		.sub-content > img {
+			height: 144px;
+			width: auto;
+		}
+
+		.items-container {
+			bottom: 95%;
+			left: 5%;
+			width: 90%;
+			height: 200%;
+			overflow: hidden;
+			position: absolute;
+
+			img {
+				width: 70%;
+				position: absolute;
+				transition: all 300ms ease-in;
+
+				&.items-shirt { width: 40%; }
+				&.items-token { width: 27%; transform: rotate(-3deg); }
+				&.items-lessons { width: 27%; transform: rotate(3deg); }
+
+				&.items-shirt {
+					bottom: 100%; left: 28%;
+					&.dropped { bottom: -5%; }
+				}
+				&.items-token {
+					bottom: 100%; left: 23%;
+					&.dropped { bottom: -6%; }
+				}
+				&.items-lessons {
+					right: 25%; bottom: 150%;
+					&.dropped { bottom: -10%; }
+				}
+			}
+		}
+	}
+
+	&.levels {
+		background-color: $darkGray;
+		height: 400%;
+		z-index: 12;
+
+		.content-container {
+			height: 25%;
+
+			.content .sub-content img.icon { position: relative; top: 0; transition: all 200ms ease-in; }
+			.content .sub-content img.icon.drop { top: 1000px; }
+
+			&.two .content {
+				background-color: $darkBlue;
+				top: 100%;
+				img.icon { position: relative; right: 10%; }
+			}
+
+			&.three .content {
+				background-color: $mediumYellow;
+				top: 200%;
+				img.icon { position: relative; right: 10%; }
+			}
+
+			&.four .content {
+				background-color: $salmon;
+				top: 300%;
+				img.icon { position: relative; right: 10%; }
+			}
+		}
+	}
+
+	&.drag-drop-trade {
+		background-color: $darkGray;
+		height: 400%;
+		z-index: 13;
+
+		.content-container {
+			height: 25%;
+
+			.parallax-item.drag {
+				height: 350px;
+				width: 300px;
+				background: transparent url('../images/parallax/drag_drop_sprite.png') no-repeat 0 0;
+				position: relative;
+				top: 7px;
+
+				.chip-container {
+					position: absolute;
+					bottom: 282px;
+					left: 0;
+					width: 600px;
+					height: 350px;
+					overflow: hidden;
+
+					.chip {
+						width: 300px;
+						height: 350px;
+						position: absolute;
+						right: 0;
+						top: 0;
+					}
+				}
+			}
+
+			.parallax-item.trade {
+				height: 350px;
+				width: 300px;
+				background: transparent url('../images/parallax/trade_sprite.png') no-repeat 0px 0px;
+				position: relative;
+
+				button.trade-btn {
+					color: transparent;
+					display: block;
+					position: absolute;
+					bottom: 30px;
+					left: 45px;
+					width: 212px;
+					height: 50px;
+					border: none;
+					background-color: transparent;
+					cursor: pointer;
+				}
+			}
+
+			&.three .content img.txt,
+			&.four .content img.txt {
+				opacity: 0;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			}
+
+			.sub-content .text-container:before {
+			    content: "";
+			    display: block;
+			    height: 350px;
+			    width: 300px;
+			    margin-bottom: 30px;
+			}
+			&.trade-container .content {
+				top: 100%;
+				// using visibility instead of opacity, for ie8
+				visibility: hidden;
+
+				.parallax-item.trade {
+					visibility: inherit;
+				}
+			}
+			&.three .content { top: 100%; }
+			&.four .content { top: 200%; }
+		}
+	}
+
+	&.kapitallism {
+		background-color: $darkGray;
+		z-index: 14;
+	}
+}
+
+section.footer-section {
+	background-color: $black;
+	position: relative;
+	z-index: 15;
+}
+
+
+// Media Query
+@media screen and (min-height: 1024px) {
+
+	section.parallax-section {
+
+		.content-container .content .sub-content {
+			.text-container {
+				margin: 60px 0 0;
+
+				span.txt { font-size: 45px; }
+
+				span.sub-txt {
+					font-size: 25px;
+					margin-top: 25px;
+				}
+			}
+			img.icon {
+				height: 281px;
+			}
+		}
+
+		&.buzz .content-container.crowd .content .parallax-item {
+			height: 370px;
+
+			.quotes {
+				.quote-finance { height: auto; top: 30px; right: -280px; bottom: auto; left: auto; }
+				.quote-mashable { height: auto; top: auto; right: -450px; bottom: -210px; left: auto; }
+				.quote-readwrite { height: auto; top: 230px; right: 270px; bottom: auto; left: auto; }
+				.quote-huffington { height: auto; top: 200px; right: -460px; bottom: auto; left: auto; }
+				.quote-usa { height: auto; top: auto; right: 200px; bottom: -290px; left: auto; }
+				.quote-bloomberg { height: auto; top: 70px; right: 85px; bottom: auto; left: auto; }
+				.quote-pc { height: auto; top: auto; right: -65px; bottom: -330px; left: auto; }
+			}
+		}
+
+		&.tools .content-container {
+
+			&.one .sub-content .text-container .sub-txt {
+				margin-top: 12px;
+				font-size: 45px;
+			}
+		}
+
+		&.kstore {
+			.sub-content > img { height: 281px; }
+
+			.items-container {
+				img.items-shirt { width: 60%; left: 20%; }
+				img.items-token { width: 40%; left: 15%; }
+				img.items-lessons { width: 40%; right: 15%; }
+			}
+		}
+	}
+
+} // end media query
+
+
+// IE styles
+html.ie8 section.parallax-section.earn .content-container .sub-content img.icon { top: -6000px; }
+html.ie8 section.parallax-section.earn,
+html.ie8 section.parallax-section.drag-drop-trade { background-color: $darkGraySec !important; }
+
+nav.parallax-nav {
+	position: fixed;
+	right: 25px;
+	top:0;
+	bottom:0;
+	z-index: 100;
+	text-align: center;
+
+	&:before {
+	  content:'';
+	  height: 100%;
+	  display:inline-block;
+	  vertical-align: middle;
+	}
+
+	ul {
+		list-style: none;
+		width: 12px;
+		display: inline-block;
+		vertical-align: middle;
+
+		li {
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			margin: 6px 0;
+
+			a {
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-width: 1px;
+				border-style: solid;
+				border-radius: 3px;
+				border-color: transparent;
+				text-decoration: none;
+				-webkit-transition: all 100ms ease-in-out;
+				-moz-transition: all 100ms ease-in-out;
+				-ms-transition: all 100ms ease-in-out;
+				-o-transition: all 100ms ease-in-out;
+				transition: all 100ms ease-in-out;
+
+				&#IntroLink { background-color: $salmon; border-color: $salmon; visibility: hidden; }
+				&#BuzzLink { background-color: $darkGray; border-color: $darkGray; }
+				&#ModesLink { background-color: $salmon; border-color: $salmon; }
+				&#PracticeLink { background-color: $darkBlue; border-color: $darkBlue; }
+				&#TournamentLink { background-color: $darkYellow; border-color: $darkYellow; }
+				&#LiveLink { background-color: $darkAqua; border-color: $darkAqua; }
+				&#ArticlesLink { background-color: $salmon; border-color: $salmon; }
+				&#ToolsLink { background-color: $darkGray; border-color: $darkGray; }
+				&#PlayLink { background-color: $salmon; border-color: $salmon; }
+				&#EarnLink { background-color: $mediumAqua; border-color: $mediumAqua; }
+				&#KStoreLink { background-color: $mediumYellow; border-color: $mediumYellow; }
+				&#LevelsLink { background-color: $darkGray; border-color: $darkGray; }
+				&#DragDropTradeLink { background-color: $darkGray; border-color: $darkGray; }
+
+				&:hover, &.contrast { border-color: #4a4a4a !important; }
+				&:active, &.active { border-color: $white !important; }
+			}
+		}
+	}
+}
+
+@keyframes point-finger {
+  0%   { background-position: 0px 0px; }
+  50% { background-position: 0px 30px; }
+  100% { background-position: 0px 0px; }
+}
+
+.parallax-pointer {
+	width: 70px;
+	height: 140px;
+	background: transparent url('../images/parallax/finger.png') no-repeat;
+	background-position: 0px 0px;
+	position: absolute;
+	bottom: 20px;
+	left: 15%;
+	z-index: 100;
+	animation: point-finger 3s infinite;
+}

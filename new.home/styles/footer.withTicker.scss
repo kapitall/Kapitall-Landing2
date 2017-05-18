@@ -1,0 +1,198 @@
+#Footer {
+	background-color: #414042;
+	position: relative;
+	width: 100%;
+}
+
+#MODTickerBar,
+#QuoteTicker {
+	height: 45px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#QuoteTicker {
+	background-color: #414042;
+	display: none;
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+
+	ul {
+		font-style:italic;
+		font-weight:bold;
+		height: 45px;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+		width: 900px;
+	}
+
+	li{
+		display:block;
+		float:left;
+		height:25px;
+		left: 0;
+		padding: 9px 0 11px;
+		position:absolute;
+		text-align:center;
+		width:900px;
+
+		transition: left 2s;
+		-webkit-transition: left 2s; /* Safari */
+
+		&.pre { left: 900px; }
+		&.post { left: -900px; }
+
+		span{
+			background:transparent url(../images/quote-sprite.png) no-repeat 0 0;
+			display:inline-block;
+			height: 30px;
+			margin-left: 18px;
+			position:relative;
+			text-indent:-9999px;
+			vertical-align:middle;
+			width: 100px;
+		}
+
+		&.bloomberg span{background-position:0 0;}
+		&.wired span{background-position:0 -46px;}
+		&.mashable span{background-position:0 -91px;}
+		&.tech-crunch span{background-position:-3px -136px;}
+		&.cbs-news span{background-position:-5px -183px;width:116px;}
+		&.barrons span{background-position:-7px -228px;}
+		&.aol-daily-finance span{background-position:-5px -273px;width:115px;}
+		&.usa-today span{background-position:0 -319px;width:72px;}
+		&.huffpost-tech span{background-position: 0 -364px;width: 136px;}
+		&.read-write-web span{background-position:-4px -410px;width:128px;}
+		&.pc-mag span{background-position: -3px -456px;width: 70px;}
+	}
+}
+
+
+#FooterDetails {
+	font-size: 12px;
+	margin: 0 auto;
+	padding: 20px 20px 70px;
+	position: relative;
+	width: 950px;
+
+	p { margin: 12px 0; }
+
+	a { color: #95CFCC; text-decoration: none; }
+	a:hover { color: #95CFCC; text-decoration: underline; }
+
+	.kapitallLinks {
+		margin: 30px 0 25px 200px;
+
+		li{
+			display:inline;
+			color: #aaacaf;
+			font-size:18px;
+			margin-left: 20px;
+
+			&:first-child { margin-left:0; }
+		}
+	}
+
+
+	.footerFeature {
+		position: absolute;
+		top: 50px;
+		left:15px;
+	}
+
+	img.columnbreak {
+		height: 319px;
+		left: 175px;
+		position: absolute;
+		top: 23px;
+		width: 3px;
+	}
+
+	.sipc-logo {
+		background-position: 0px -80px;
+		float: right;
+		height: 45px;
+		margin-top: -40px;
+		text-indent: -9999px;
+		width: 97px;
+	}
+
+	.disclaimer { margin-left: 200px; }
+
+	.socialNetworkButtons {
+		li{
+			display: block;
+			font-size: 14px;
+			font-weight: bold;
+			height: 22px;
+			line-height: 22px;
+			margin-bottom: 13px;
+
+			&:hover a { text-decoration: underline; }
+		}
+
+		a span{
+			background-image: url(../images/social_icons.png);
+			background-repeat: no-repeat;
+			float: left;
+			height: 23px;
+			margin: 0 9px 0 0;
+			width: 23px;
+
+			border-radius: 4px;
+			-moz-radius: 4px;
+			-webkit-radius: 4px;
+		}
+
+		a.facebookLink span{background-position: 0px 0px;}
+		li:hover a.facebookLink span,
+		a.facebookLink:active span{background-position: -35px 0px;}
+		a.twitterLink span{background-position: 0px -34px;}
+		li:hover a.twitterLink span,
+		a.twitterLink:active span{background-position: -35px -34px;}
+		a.youtubeLink span{background-position: 0px -68px;}
+		li:hover a.youtubeLink span,
+		a.youtubeLink:active span{background-position: -35px -68px;}
+		a.pinterestLink span{background-position: 0px -102px;}
+		li:hover a.pinterestLink span,
+		a.pinterestLink:active span{background-position: -35px -102px;}
+		a.rssLink span{background-position: 0px -136px;}
+		li:hover a.rssLink span,
+		a.rssLink:active span{background-position: -35px -136px;}
+		a.googleLink span{background-position: 0px -170px;}
+		li:hover a.googleLink span,
+		a.googleLink:active span{background-position: -35px -170px;}
+		a.windowsLink span{background-position: 0px -205px;}
+		li:hover a.windowsLink span,
+		a.windowsLink:active span{background-position: -35px -205px;}
+
+        a.googlePlayLink img {
+            width: 135px;
+            height: 47px;
+            margin-bottom: 10px;
+        }
+        a.appStoreLink img {
+            width: 135px;
+            height: 40px;
+            position: relative;
+            top: 20px;
+        }
+	}
+
+	.madeinNYC {
+		background-position: -2px -27px;
+		display: block;
+		height: 55px;
+		margin-top: 55px;
+		overflow: hidden;
+		position: relative;
+		text-indent: -100%;
+		width: 80px;
+
+		&:hover { background-position: -90px -27px; }
+		:active { background-position: -2px -27px; }
+	}
+}

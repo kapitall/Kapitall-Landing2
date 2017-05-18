@@ -1,0 +1,128 @@
+//styles
+body {
+	background-color: #2C2C2C;
+	color: #FFF;
+}
+
+#Header { border-bottom: 1px solid #414042; }
+
+#MainBody {
+	width: 912px;
+	margin: 0 auto;
+	padding-top: 35px;
+}
+
+.sprite { background-image: url('../images/sprite.png'); background-position: 100px 100px; background-repeat: no-repeat; }
+
+h1.kkHeader {
+	background: transparent url('../images/KKapitall.png') no-repeat 0px 0px;
+	height: 45px;
+	width: 380px;
+	margin: 80px auto 25px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+p.kkDescription {
+	color: #A2A2A2;
+	text-align: center;
+	margin: 0 auto 40px;
+	width: 80%;
+}
+
+.statusList {
+	margin-bottom: 45px;
+	text-align: center;
+
+	.status {
+		float: left;
+		text-indent: -1px;
+		width: 169px;
+		margin-left: 10px;
+
+		h3 {
+			font-size: 18px;
+			text-align: center;
+			height: 40px;
+		}
+
+		.statusDescription {
+			font-size: 15px; opacity: 0;
+
+			&.active { opacity: 1; }
+		}
+
+		&:hover .statusDescription { opacity: 1; }
+
+		&.member {
+			h3 { background: transparent url('../images/member_status.png') no-repeat 0 0; }
+			.statusDescription { color: #35ADB2; }
+		}
+
+		&.bronze {
+			h3 { background: transparent url('../images/bronze_status.png') no-repeat 0 0; }
+			.statusDescription { color: #AF5D35; }
+		}
+
+		&.silver {
+			h3 { background: transparent url('../images/silver_status.png') no-repeat 0 0; }
+			.statusDescription { color: #B6B7B7; }
+		}
+
+		&.gold {
+			h3 { background: transparent url('../images/gold_status.png') no-repeat 0 0; }
+			.statusDescription { color: #D89C30; }
+		}
+
+		&.diamond {
+			width: 186px;
+			h3 { background: transparent url('../images/diamond_status.png') no-repeat 0 0; }
+			.statusDescription { color: #A2A2A2; }
+		}
+
+		.statusDescription { margin-top: 20px; }
+
+	}
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+}
+
+button.joinKlub {
+	display: block;
+	margin: 0 auto;
+	background: transparent url('../images/klub_kapitall/join_klub_button.png') no-repeat 0 0;
+	border: none;
+	width: 169px;
+	height: 45px;
+	padding: 0;
+	left: -4px; // to align it with the silver status
+	position: relative;
+	cursor: pointer;
+	text-indent: 150%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.disclaimer {
+	display: none;
+	font-size: 12px;
+	color: #A2A2A2;
+	position: absolute;
+	width: 912px;
+
+	p { margin: 12px 0; }
+
+	a {
+		color: #35ADB2;
+		text-decoration: none;
+		font-weight: bold;
+
+		&:hover { text-decoration: underline; }
+	}
+}

@@ -1,0 +1,155 @@
+$green: #719f41;
+
+//styles
+body {
+	background-color: #2C2C2C;
+	color: #FFF;
+}
+
+#Header { border-bottom: 1px solid #414042; }
+
+#MainBody {
+	max-width: 1190px;;
+	margin: 0 auto;
+	padding-top: 55px;
+}
+
+div.roboContainer {
+	color: #c8c8c8;
+	font-family: "Raleway", sans-serif;
+}
+
+.lColumn {
+	float: left;
+	width: 32%;
+	text-align: center;
+
+	img {
+		display: block;
+		margin: 0 auto;
+		width: 323px;
+		height: auto;
+	}
+}
+
+.rColumn {
+	float: right;
+	width: 64%;
+	padding: 20px 2% 0;
+
+	h2 {
+		font-size: 60px;
+		color: $green;
+	}
+
+	.roboDescription {
+		margin-top: 15px;
+		font-size: 18px;
+		line-height: 1.4;
+		font-weight: 200;
+	}
+}
+
+
+ul.roboDetails {
+	margin-top: 40px;
+
+	li {
+		float: left;
+		width: 30%;
+		text-align: center;
+
+		&.matchmaker { padding: 0 5%; }
+	}
+
+	img {
+		height: 100px;
+		width: auto;
+	}
+
+	h4, p {
+		text-align: left;
+		font-size: 14px;
+	}
+
+	h4 {
+		margin-top: 20px;
+		font-weight: 800;
+		letter-spacing: 0.06em;
+		word-spacing: 2px;
+	}
+
+	p {
+		margin-top: 5px;
+		line-height: 1.25;
+	}
+}
+
+
+div.applyContainer {
+	margin-top: 60px;
+	position: relative;
+
+	img{
+		display: inline-block;
+		float: right;
+		width: 150px;
+	}
+}
+
+button.apply {
+	display: inline-block;
+	background-color: $green;
+	border: none;
+	border-radius: 10px;
+	width: 190px;
+	height: 45px;
+	padding: 0;
+	left: -4px; // to align it with the silver status
+	position: relative;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	font-family: "Raleway", sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+	color: #fff;
+}
+
+a.faq {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background: transparent url('../images/robo/robo_icon_faq.png') no-repeat;
+	position: absolute;
+	top: 5px;
+	left: 210px;
+}
+
+.disclaimer {
+	display: none;
+    padding-left: 0;
+    margin: auto;
+	font-size: 12px;
+	color: #A2A2A2;
+	max-width: 1190px;
+	position: absolute;
+
+
+	p { margin: 12px 0; }
+
+	a {
+		color: #35ADB2;
+		text-decoration: none;
+		font-weight: bold;
+
+		&:hover { text-decoration: underline; }
+	}
+}
+
+@media screen and (max-width: 1240px) {
+    .disclaimer {
+        margin: 0 2% 0;
+    }
+
+}

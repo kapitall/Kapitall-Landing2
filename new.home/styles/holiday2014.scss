@@ -1,0 +1,31 @@
+section.parallax.intro {
+	background-color: #fff8f0;
+
+	& > img {
+
+		left: 50%;
+		margin-left: -275px;
+		position: absolute;
+		top: 140px;
+	}
+
+	div.house {
+		background: #f5e7d4;
+		height: 20px;
+		position: relative;
+		top: 60px;
+
+		img {
+			position: absolute;
+			right: 5%;
+			top: -200px;
+		}
+	}
+
+	div.background {
+		background: #194e5b url('../images/holiday2014/scenery.png') repeat-x 0 0;
+		height: 480px;
+		position: relative;
+		top: 60px;
+	}
+}

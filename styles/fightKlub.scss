@@ -1,0 +1,46 @@
+body {
+    background-color: #2b2b2b;
+}
+
+div#Hero {
+	background: transparent url('../images/fight_klub/fightklub_LP_invite.png') no-repeat 0 0 !important;
+
+	&.invitation { background: transparent url('../images/fight_klub/fightklub_LP_invite.png') no-repeat 0 0 !important; }
+	&.loser { background: transparent url('../images/fight_klub/fightklub_LP_loser.png') no-repeat 0 0 !important; }
+	&.winner1 { background: transparent url('../images/fight_klub/fightklub_LP_1st.png') no-repeat 0 0 !important; }
+	&.winner2 { background: transparent url('../images/fight_klub/fightklub_LP_2nd.png') no-repeat 0 0 !important; }
+	&.winner3 { background: transparent url('../images/fight_klub/fightklub_LP_3rd.png') no-repeat 0 0 !important; }
+
+    width: 950px;
+    display: inline-block;
+    margin-top: 34px;
+}
+
+#redeemContent {
+	position: absolute;
+	top: 73px;
+	left: 470px;
+	width: 460px;
+}
+
+#redeemTitle {
+	position: relative;
+	color: #6199a9;
+	font-size: 42px;
+	font-family: Raleway;
+	font-weight: 900;
+}
+#redeemText {
+	position: relative;
+	color: #fff;
+	font-size: 20px;
+	top: 20px;
+}
+
+
+#Hero.winner div#redeemContent{
+	left: 440px;
+}
+
+div.container { text-align : center; }
+

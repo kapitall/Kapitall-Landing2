@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'texgyreadventor';
+    src: url('../font/texgyreadventor/texgyreadventor-regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../font/texgyreadventor/texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/texgyreadventor/texgyreadventor-regular-webfont.woff') format('woff'), /* Modern Browsers */
+         url('../font/texgyreadventor/texgyreadventor-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../font/texgyreadventor/texgyreadventor-regular-webfont.svg#texgyreadventorregular') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-color: #000;
+	color: #FFF;
+}
+
+input {
+	background-color: #CCC;
+	color: #666;
+	padding: 5px;
+	font-size: 14px;
+}
+
+.error {
+	color: #d84e00;
+	display: none;
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+
+.sprite { background-image: url('../images/sprite.png'); background-position: 100px 100px; background-repeat: no-repeat; }
+
+
+#MainBody {
+	box-sizing: border-box;
+	height: 100%;
+	min-height: 400px;
+	min-width: 765px;
+	position: relative;
+	background-color: #ADCDCB;
+	z-index: 0;
+
+	transition: height 500ms;
+	-webkit-transition: height 500ms; /* Safari */
+}
+
+#BrandVideo {
+	height: 532px;
+	left: 50%;
+	margin-left: -430px;
+	position: absolute;
+	width: 860px;
+
+	img.video {
+		display: block;
+		position: absolute;
+		height: auto;
+		width: 600px;
+		top: 50px;
+		left: 130px;
+	}
+
+	transition: margin-top 500ms;
+	-webkit-transition: margin-top 500ms; /* Safari */
+
+	.mainTagLine {
+		font-family: 'texgyreadventor', sans-serif;
+		font-size: 30px;
+		margin-bottom: 20px;
+		text-align: center;
+		text-transform: uppercase;
+		position: relative;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	iframe {
+		left: 155px;
+		position: relative;
+		top: 20px;
+	}
+}
+
+#BrandImage {
+	max-height: 554px;
+	width: 40%;
+	max-width: 678px;
+	position: absolute;
+	bottom: 45px;
+	left: 0;
+
+	img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+}
+
+#BrandButton {
+	background-color: #3cbfbb;
+	background-image: url(../images/joinNowButton.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	bottom: 51px;
+	cursor: pointer;
+	height: 51px;
+	left: 50%;
+	margin-left: -129px;
+	position: absolute;
+	width: 258px;
+	z-index: 20;
+
+	border-radius: 3px;
+	-moz-radius: 3px;
+	-webkit-radius: 3px;
+}
+
+#Header, #Footer { z-index: 100; }
+#Header { position: fixed !important; }
+#Footer {
+	position: absolute !important;
+	bottom: 0;
+}
+
+@media screen and (min-height: 1024px) {
+
+	#BrandVideo {
+		height: 674px;
+
+		img.video {
+			width: 760px;
+			height: auto;
+			top: 64px;
+			left: 50px;
+		}
+
+		.mainTagLine {
+			font-size: 38px;
+			margin-bottom: 25px;
+		}
+
+		iframe {
+			left: 79px;
+			position: relative;
+			top: 28px;
+		}
+	}
+
+}

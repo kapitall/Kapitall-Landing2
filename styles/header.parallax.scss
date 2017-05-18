@@ -1,0 +1,150 @@
+#Header {
+	height: 100px;
+	position: fixed;
+	z-index: 10000;
+
+	&, .signUpPrompt, .topBar, h1.sprite, nav ul li a, ul.signInUpToggles {
+		-webkit-transition: all 150ms ease-in-out;
+		-moz-transition: all 150ms ease-in-out;
+		-ms-transition: all 150ms ease-in-out;
+		-o-transition: all 150ms ease-in-out;
+		transition: all 150ms ease-in-out;
+	}
+
+	h1.sprite {
+		top: 18px;
+		left: 22px;
+		height: 23px;
+		width: 137px;
+		text-indent: 100%;
+		background: transparent url('../images/parallax_v2/kapitall_logo.png') no-repeat 0 0;
+		z-index: 100;
+	}
+}
+
+#Header .topBar {
+	background-color: #404142;
+	border-bottom: 1px solid #58585B;
+	height: 100px;
+
+	ul.signInUpToggles {
+		margin: 22px 22px 0px 0px;
+
+		li#SignInToggle {
+			margin-right: 20px;
+			a { color: #3fbfba; }
+		}
+
+		li#SignUpToggle a {
+			background-color: #3fbfba;
+			padding: 5px 15px;
+		}
+	}
+
+	nav {
+		position: absolute;
+		height: 50%;
+		top: 40px;
+
+		ul {
+			margin: 0px;
+			position: relative;
+			left: 3px;
+
+			li {
+				margin-left: 10px;
+				text-transform: none;
+
+				a {
+					line-height: 60px;
+					font-size: 12px;
+					color: #9a9a9a;
+
+					&:hover, &:active {
+						color: #3fbfba;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+	#SignOutMessage {
+		margin-top: 22px;
+		margin-right: 15px;
+	}
+}
+
+#Header.signInOpen { height: 222px; }
+
+#Header.signUpOpen { height: 100% !important; }
+
+#Header .kapitallSignIn { margin: 25px 20px 0 0; }
+
+#Header .signUpPrompt { margin: 25px 0px 0px 20px; }
+
+#Header.scrollingState {
+	height: 60px;
+
+	.signUpPrompt { margin-top: 15px; }
+
+	.topBar {
+		height: 60px;
+
+		nav { top: 30px; }
+
+		#SignOutMessage { margin-top: 8px; }
+	}
+
+	h1.sprite { top: 6px; }
+
+	nav ul li a { line-height: 30px; }
+
+	ul.signInUpToggles { margin-top: 8px; }
+
+	&.signInOpen { height: 180px; }
+}
+
+
+@media (min-width: 1020px) {
+
+	#Header { height: 60px; }
+
+	#Header {
+
+        .topBar {
+            height: 60px;
+
+            nav {
+                height: 100%;
+                top: 0;
+
+                ul {
+                    left: 170px;
+
+                    li { margin-left: 30px; }
+                }
+            }
+        }
+
+        &.scrollingState {
+            height: 35px;
+
+            &.signInOpen { height: 160px; }
+
+            .topBar {
+                height: 35px;
+
+                nav { top: 0; }
+            }
+
+            nav ul li a { line-height: 35px; }
+        }
+
+
+
+
+	}
+
+	#Header.signInOpen { height: 182px; }
+}

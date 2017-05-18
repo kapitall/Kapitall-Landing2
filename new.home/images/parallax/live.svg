@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 832 281" enable-background="new 0 0 832 281" xml:space="preserve">
+<g>
+	<g>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="655.8061" y1="22.0165" x2="767.7225" y2="22.0165">
+			<stop  offset="0" style="stop-color:#2F999E"/>
+			<stop  offset="0.6069" style="stop-color:#309BA0"/>
+			<stop  offset="1" style="stop-color:#309EA3"/>
+		</linearGradient>
+		<path fill="url(#SVGID_1_)" d="M668.6,27.5c0-7.1,5.7-12.8,12.8-12.8H742c7.1,0,12.8,5.7,12.8,12.8V44h12.8V14.7
+			C767.7,6.6,761.2,0,753,0h-82.6c-8.1,0-14.7,6.6-14.7,14.7V44h12.8V27.5z"/>
+	</g>
+	<g>
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="583.3181" y1="136.4832" x2="832" y2="136.4832">
+			<stop  offset="0" style="stop-color:#2F999E"/>
+			<stop  offset="0.6069" style="stop-color:#309BA0"/>
+			<stop  offset="1" style="stop-color:#309EA3"/>
+		</linearGradient>
+		<path fill="url(#SVGID_2_)" d="M832,45.4c0-6.9-5.6-12.5-12.5-12.5H595.8c-6.9,0-12.5,5.6-12.5,12.5v105.7v89H832v-88.8V45.4z"/>
+	</g>
+	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="707.659" y1="240.4846" x2="707.659" y2="282.4771">
+		<stop  offset="0" style="stop-color:#47494B"/>
+		<stop  offset="1" style="stop-color:#494E53"/>
+	</linearGradient>
+	<path fill="url(#SVGID_3_)" d="M583.3,268c0,6.9,5.6,12.5,12.5,12.5h223.6c6.9,0,12.5-5.6,12.5-12.5v-29H583.3V268z"/>
+	<g>
+	</g>
+	<path fill="none" stroke="#FFFFFF" stroke-width="0.5" d="M645.9,179.4"/>
+	<path fill="none" stroke="#FFFFFF" stroke-width="0.5" d="M709,179.4"/>
+	<polygon fill="#FFFFFF" points="723.4,140.4 719.1,134.2 758.1,75.4 726.6,75.4 693,128.4 693,75.4 662.9,75.4 662.9,136.3 
+		662.9,193.2 693.3,193.2 693.3,142.3 725.4,193.2 760.6,193.2 	"/>
+</g>
+</svg>

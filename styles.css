@@ -1,0 +1,97 @@
+#ab-test-b {
+  display: none;
+  margin-top: 35px;
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#ab-test-b #ab-test-b-text-container {
+  float: right;
+  padding-top: 175px;
+  padding-right: 25px;
+  width: 400px;
+  text-align: center;
+}
+
+#ab-test-b #ab-test-b-text-container .ab-test-text-title {
+  font-weight: 200;
+  font-size: 2em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+#ab-test-b #ab-test-b-text-container .ab-test-text-title-line {
+  color: #ffffff;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+#ab-test-b #ab-test-b-text-container .ab-test-drive-btn {
+  color: #ffffff;
+  background-color: #3fbfba;
+  height: 37px;
+  padding: 5px 25px;
+  font-size: 14px;
+  border: 0px;
+}
+
+#ab-test-banner {
+  display: none;
+  margin-top: 35px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #257EBE;
+  color: #ffffff;
+  line-height: 70px;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+}
+
+#ab-test-banner .ab-inline {
+  display: inline-block;
+}
+
+#ab-test-banner .title {
+  font-weight: 200;
+  min-width: 300px;
+  width: 30%;
+  font-size: 2em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+#ab-test-banner .title-line {
+  font-weight: 200;
+  vertical-align: middle;
+  font-size: 14px;
+  min-width: 410px;
+  text-align: center;
+  width: 49%;
+}
+
+#ab-test-banner b {
+  font-weight: 600;
+}
+
+#ab-test-banner i {
+  font-style: italic;
+}
+
+#ab-test-banner .ab-test-drive-btn {
+  color: #257EBE;
+  background-color: #ffffff;
+  height: 37px;
+  padding: 5px 25px;
+  font-size: 14px;
+  border: 0px;
+}
+
+#ab-test-banner #ab-test-drive-btn-container {
+  min-width: 185px;
+  width: 20%;
+  text-align: right;
+}

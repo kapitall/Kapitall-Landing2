@@ -1,0 +1,101 @@
+body {
+	background-color: #D45A46;
+	color: #FFF;
+}
+
+
+
+#MainBody {
+	height: 1100px;
+	min-height: 400px;
+	min-width: 765px;
+	padding-top: 35px;
+	position: relative;
+
+	transition: height 500ms;
+	-webkit-transition: height 500ms; /* Safari */
+}
+
+#PromoContainer {
+	height: 355px;
+	position: relative;
+	left: 50%;
+	margin-left: -385px;
+	top: 50%;
+	margin-top: -177px;
+	width: 771px;
+
+	div.pocket {
+		background: url('../images/pocket/pocket.png') 0 0 no-repeat;
+		height: 355px;
+		width: 310px;
+	}
+
+	div.title {
+		background: url('../images/pocket/title.png') -18px 20px no-repeat;
+		height: 225px;
+		margin-left: 310px;
+		width: 460px;
+	}
+
+	div.title.complete {
+		background: url('../images/pocket/title_complete.png') -18px 20px no-repeat;
+	}
+
+	div.social {
+		left: 313px;
+		position: absolute;
+		top: 205px;
+
+		& > a {
+			background: url('../images/pocket/social.png') 0 0 no-repeat;
+			display: inline-block;
+			height: 22px;
+			margin-right: 5px;
+			width: 22px;
+		}
+
+		a.fb { background-position: -9px -8px; }
+		a.twitter { background-position: -43px -8px; }
+		a.linkedIn { background-position: -78px -8px; }
+		a.mail { background-position: -113px -6px; width: 27px;}
+	}
+
+	div.actions {
+		margin-top: 20px;
+
+		input {
+			background-color: #E7796D;
+			border: none;
+			color: #FFF;
+			display: inline-block;
+			margin-right: 20px;
+			width: 190px;
+
+			&::-webkit-input-placeholder { color: #FFF; }
+			&:-moz-placeholder { color: #FFF; }
+			&::-moz-placeholder { color: #FFF; }
+			&:-ms-input-placeholder { color: #FFF; }
+		}
+
+		button {
+			background-color: #344A69;
+			border: none;
+			border-radius:4px;
+			color: #E4A724;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 14px;
+			padding: 7px 30px;
+			text-transform: uppercase;
+
+			-moz-radius:4px;
+			-webkit-radius:4px;
+		}
+	}
+
+	div.error {
+		font-size: 14px;
+		padding: 5px;
+	}
+}
