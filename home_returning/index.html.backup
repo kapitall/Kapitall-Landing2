@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Kapitall - investing for the rest of us.</title>
+<!--    <meta name="description" content="Kapitall is an online investing platform that combines the world's friendliest investing experience with powerful yet simple tools to build your skills - and maybe even your net worth." />
+    <meta name="author" content="Investing,Easy investing,Investing for dummies,Kapitall,Kapital,Stocks,ETF,Mutual funds,Stock list,Company list,How do I invest,New interface,Minority report investing,My portfolio,401k,403b" />
+    <link href="https://kapitall.com/favicon.ico" rel="shortcut icon"/>-->
+
+    <!-- For Facebook Share -->
+    <meta property="og:url"           content="https://landing.kapitall.com/stock_stars" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Kapitall" />
+    <meta property="og:description"   content="Kapitall is an online investing platform that combines the world&#39;s friendliest investing experience with powerful yet simple tools to build your skills - and maybe even your net worth" />
+    <meta property="og:image"         content="https://kapitall.s3.amazonaws.com/marketing/email/mm/facebook_wall.png" />
+    <meta property="og:image:height" content="300"/>
+    <meta property="og:image:width" content="500"/>
+
+    <!-- optional links -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600,400,300,200" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+       <script>
+          document.createElement('main');
+          document.createElement('section');
+          document.createElement('article');
+          document.createElement('nav');
+       </script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="styles/vendor.css"/>
+
+	<link rel="stylesheet" href="styles/d2f3d749.main.css"/>
+
+
+
+<script>
+	if(/User=returningUser/.test(document.cookie) && !/home_returning/.test(window.location) && !/errorcode/.test(window.location.href)) { window.location = "https://landing.kapitall.com/home_returning/"; }
+</script>
+</head>
+<body>
+	<div id="Header">
+
+	<div class="contains topBar">
+	<h1 class="sprite">Kapitall</h1>
+
+	<nav>
+		<ul>
+			<li><a href="#sec-intro" data-section="sec-intro">WHO WE ARE</a></li>
+			<li><a href="#tools" data-section="tools">HOW WE DO IT</a></li>
+			<li><a href="#why" data-section="why">WHY WE DO IT</a></li>
+			<li><a href="#quotes" data-section="quotes">WHO &#9825;'s US</a></li>
+			<li><a href="#big-o" data-section="big-o">FAQ'S</a></li>
+			<li><a href="http://wire.kapitall.com/" target="_blank">WIRE</a></li>
+		</ul>
+	</nav>
+
+	<ul class="fright signInUpToggles">
+		<li id="SignInToggle">
+			<a href="javascript:void('Sign In');">Sign In</a>
+		</li>
+		<li id="SignUpToggle">
+			<a href="javascript:void('Sign Up');">Sign Up</a>
+		</li>
+	</ul>
+
+	<div id="SignOutMessage" class="fright"></div>
+</div>
+
+
+	<div class="kapitallSignIn">
+	<form action="https://www.kapitall.com/api/login" method="POST" class="primaryLoginForm" id="signInForm">
+        <input type="hidden" name="redirectUrl" value="https://www.kapitall.com" />
+		<input name='landingPageURLError' type='hidden' value="https://landing.kapitall.com/home/" />
+        <input type="hidden" name="roboInviteToken" value="" />
+		<div class="error"></div>
+		<div class="fieldItem">
+			<label><span class="placeholderPolyfill">Email</span>
+			<input name="username" type="text" placeholder="Email" /></label>
+			<label class="subText rememberMe"><input class="rememberMeCheckbox" type="checkbox" tabindex="-1" name="user_rememberMe" />Remember Me</label>
+		</div>
+		<div class="fieldItem">
+			<label><span class="placeholderPolyfill">Password</span>
+			<input name="password" type="password" placeholder="Password" /></label>
+		</div>
+		<div class="fieldItem center">
+			<button type="submit">Sign In</button>
+			<a class="subText forgotPasswordLink" href="javascript:void('Forgot my password');" title="Forgot Password">Forgot My Password</a>
+		</div>
+	</form>
+	<div class="socialLoginForm">
+		<label>Or sign in with social media</label>
+		<div class="socialFieldItems">
+			<button class="socialButton signInFacebook" data-target="facebook">Sign in with Facebook</button>
+			<button class="socialButton signInGoogle" data-target="googleplus">Sign in with Google</button>
+			<button class="socialButton signInTwitter" data-target="twitter">Sign in with Twitter</button>
+		</div>
+	</div>
+</div>
+
+
+	<div class="signUpPrompt">
+		<span>Not a member?</span>
+		<button class="createAccountButton">CREATE ACCOUNT</button>
+	</div>
+
+	<div id="SignUp" class="contains default">
+		<div class="banner"></div>
+        <div class="subTitle">You’re just a click away from receiving your commission-free trades</div>
+
+		<div class="info">
+			<div class="practice contains item">
+				<div class="fleft sprite"></div>
+				<div class="txt"><span class="title">Practice</span> with a $100K virtual cash portfolio to grow your investing skills risk-free.</div>
+			</div>
+			<div class="compete contains item">
+				<div class="fleft sprite"></div>
+				<div class="txt"><span class="title">Compete</span> against fellow Kapitallists in our monthly virtual stock tournament to win up to $100K in cash prizes.</div>
+			</div>
+			<div class="trade contains item">
+				<div class="fleft sprite"></div>
+				<div class="txt"><span class="title">Trade</span> stocks and ETFs. No minimum deposit or balance required.</div>
+			</div>
+
+			<div class="robo contains item">
+				<div class="fleft sprite"></div>
+				<div class="txt"><span class="title">Customize</span> your portfolio to your financial goals. Let Robo take control.</div>
+			</div>
+
+			<div class="ira contains item">
+				<div class="fleft sprite"></div>
+				<div class="txt"><span class="title">Save</span> for retirement in a Traditional or Roth IRA -- or make your 401(k) do tricks and rollover.</div>
+			</div>
+
+			<div class="regSecureInfo">
+				<ul>
+					<li class="truste">
+<div id="fe5e92b1-a618-4f7f-8ded-4879febf5e43"> <script type="text/javascript" src="//privacy-policy.truste.com/privacy-seal/Kapitall,-Inc-/asc?rid=fe5e92b1-a618-4f7f-8ded-4879febf5e43"></script><a href="//privacy.truste.com/privacy-seal/Kapitall,-Inc-/validation?rid=d7544727-2a9c-47d2-95fd-6329d723800a" title="TRUSTe online privacy certification" target="_blank"><img style="border: none" src="//privacy-policy.truste.com/privacy-seal/Kapitall,-Inc-/seal?rid=d7544727-2a9c-47d2-95fd-6329d723800a" alt="TRUSTe online privacy certification"/></a></div>
+					</li>
+					<li class="verisign">
+						<a href="https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&dn=landing.kapitall.com&lang=en" target="_blank">
+							<img src="https://seal.verisign.com/getseal?at=0&sealid=2&dn=landing.kapitall.com&lang=en" alt="Click to Verify - This site has chosen an SSL Certificate to improve Web site security" />
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<a target="_blank" href="https://www.kapitall.com/framework/#?tool=About&amp;params=Terms&amp;options=Privacy" class="headerPrivacy">View our Privacy Policy</a>
+
+		</div>
+
+		<div class="formCol">
+			<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript">
+    function validateForm() {
+
+        var v = grecaptcha.getResponse();
+        if(v.length == 0){
+        alert('please enter recaptcha');
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+</script>
+
+
+			<div class="kapitallSignUp optionsView">
+	<div class="signUpInfo">
+		<div class="signUpAvatar contains">
+			<span class="signUpIcon"></span>
+			<h3 class="socialTitle"></h3>
+		</div>
+
+		<button data-target="options"></button>
+
+		<form id="signUpForm" method="post" action="https://www.kapitall.com/api/signup"  onsubmit="return validateForm()"  >
+			<input type="hidden" value="VALUE" name="timestamp" />
+			<input type="hidden" name="landingPageProduct" value="" />
+			<input type="hidden" name="landingPageReferrer" value="" />
+            <input name="landingKSAction" type="hidden" value=""/>
+            <input name="landingKSValue" type="hidden" value=""/>
+            <input type="hidden" name="roboInviteToken" value="" />
+			<input type="hidden" name="landingPageURL" value="https://landing.kapitall.com/home/" />
+			<input type="hidden" name="landingPageURLError" value="https://landing.kapitall.com/home/" />
+			<input type="hidden" name="landingPageSource" value="mainhome_primary_flow1a_parallax_product_20150622" />
+			<input type="hidden" name="redirectUrl" value="https://www.kapitall.com" />
+			<input type="hidden" value="true" name="firstrun" />
+			<input type="hidden" value="brokerageLater" name="firstRunStartCondition" />
+
+			<!-- visible inputs -->
+			<div>
+				<label><span class="placeholderPolyfill">First Name</span>
+				<input type="text" name="name_first" placeholder="First Name" /></label>
+			</div>
+			<div>
+				<label><span class="placeholderPolyfill">Last Name</span>
+				<input type="text" name="name_last" placeholder="Last Name" /></label>
+			</div>
+			<div>
+				<label><span class="placeholderPolyfill">Email</span>
+				<input type="text" name="username" placeholder="Email" /></label>
+			</div>
+			<div>
+				<label><span class="placeholderPolyfill">Password</span>
+				<input type="password" name="password" placeholder="Password" /></label>
+			</div>
+			<div>
+				<label><span class="placeholderPolyfill">Phone # (optional)</span>
+				<input type="text" name="phone_number" maxlength="12" placeholder="Phone # (optional)" /></label>
+			</div>
+            <div>
+                <div style="width: 0px;transform:scale(0.84);" class="g-recaptcha" data-callback="recaptchaCallback"  data-sitekey="6LcPTwkUAAAAAAylU1QNZq3SYC9GLomyMTzcSH5g"> </div>
+            </div>
+			<div>
+<!--				<label class="subText">
+					<input type="checkbox" value="on" name="newsletter" checked="checked">
+					Send me Kapitall's Weekly Digest
+				</label>-->
+			</div>
+
+			<div class="error"></div>
+
+			<div class="actions">
+			    <button data-startmode="FIRSTRUN" type="submit">Sign Up</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="signUpOptions">
+		<button data-target="facebook" class="facebookOption socialButton">Sign Up with Facebook</button>
+		<button data-target="googleplus" class="googleOption socialButton">Sign Up with Google+</button>
+		<button data-target="twitter" class="twitterOption socialButton">Sign Up with Twitter</button>
+		<button data-target="default" class="defaultOption">Sign Up with your Email</button>
+	</div>
+
+</div>
+
+		</div>
+
+	</div><!-- End #SignUp -->
+
+	<a id="closeSignUp" href="javascript:void('closeSignUp');"></a>
+</div><!-- End #Header -->
+
+
+	<main class="parallax-container">
+
+		<section id="intro" class="parallax intro loading">
+			<h2 class="default-title">INVEST IN YOUR LIFE</h2>
+			<ul class="productIcons">
+				<li data-icon="fund" class="fundIcon">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 67 75" enable-background="new 0 0 67 75" xml:space="preserve">
+						<path class="backFold" fill="#3C3C66" fill-opacity="0" stroke="#7676A7" stroke-miterlimit="10" d="M10.5,4.4C8.8,4.3,7.5,5.9,7.4,7.5l-0.1,2H59L10.5,4.4z"/>
+						<path class="contour" fill="#7676A7" fill-opacity="0" stroke="#7676A7" stroke-miterlimit="10" d="M64.9,11.9c0-1.8-1.4-3.2-3.2-3.2H4.8c-1.8,0-3.2,1.4-3.2,3.2v26.9 v22.6h63.2V38.8V11.9z"/>
+						<path class="bottom" fill="#2E3032" fill-opacity="0" stroke="#7676A7" stroke-miterlimit="10" d="M1.7,68.5c0,1.8,1.4,3.2,3.2,3.2h56.9c1.8,0,3.2-1.4,3.2-3.2v-7.4 H1.7V68.5z"/>
+						<rect class="border" x="16" y="21" fill="none" stroke="#7676A7" stroke-miterlimit="10" width="34.9" height="34.9"/>
+						<path class="text" fill-rule="evenodd" clip-rule="evenodd" fill="#7676A7" d="M46.6,29h-1.2v-4.8h1.1v0.5c0.1-0.3,0.5-0.6,1-0.6 c0.8,0,1.3,0.4,1.3,1.4V29h-1.2v-3.6c0-0.4,0-0.8-0.3-0.9c-0.1,0-0.3,0-0.4,0.1c-0.2,0.2-0.2,0.4-0.2,0.7V29z"/>
+						<path class="text" fill-rule="evenodd" clip-rule="evenodd" fill="#7676A7" d="M26,24.6c-0.3-0.2-0.6-0.4-1.1-0.4c-0.4,0-0.7,0.2-1.1,0.4 c-0.5,0.4-0.8,1.2-0.8,2.1c0,0.9,0.3,1.6,0.8,2.1c0.3,0.2,0.6,0.4,1.1,0.4c0.4,0,0.8-0.2,1.1-0.4c0.5-0.4,0.8-1.2,0.8-2.1
+							C26.8,25.8,26.5,25,26,24.6 M25.5,26.6c0,0.9,0,1.6-0.1,2c-0.1,0.2-0.2,0.3-0.5,0.3c-0.2,0-0.4-0.1-0.4-0.3c-0.2-0.4-0.2-1.1-0.2-2
+							c0-0.9,0-1.6,0.2-2c0.1-0.2,0.2-0.3,0.4-0.3c0.2,0,0.4,0.1,0.5,0.3C25.6,25,25.5,25.8,25.5,26.6"/>
+						<path class="text" fill-rule="evenodd" clip-rule="evenodd" fill="#7676A7" d="M38.4,30.8v1.3h-0.2c-0.1-0.5-0.4-1-0.9-1c-0.4,0-0.7,0.2-0.7,0.5 c0,0.3,0.1,0.6,0.7,1c0.8,0.5,1.5,0.7,1.5,1.6c0,1-0.9,1.5-1.6,1.5h-1.4v-1.8h0.2c0.2,0.9,0.5,1.5,1.1,1.5c0.4,0,0.7-0.2,0.7-0.7
+							c0-0.5-0.3-0.7-1-1.1c-0.7-0.5-1.2-0.7-1.2-1.4c0-0.9,0.6-1.4,1.6-1.4H38.4z"/>
+						<path class="text" fill-rule="evenodd" clip-rule="evenodd" fill="#7676A7" d="M40,29v-3.5c0-1-0.5-1.5-1.3-1.4c-0.5,0-0.9,0.4-1,0.7 c-0.2-0.5-0.6-0.7-1.1-0.7c-0.5,0-0.8,0.3-1,0.6v-0.5h-1.1V29h1.2v-3.6c0-0.4,0-0.6,0.2-0.7c0.1-0.1,0.3-0.1,0.4-0.1
+							c0.3,0.1,0.3,0.4,0.3,0.9V29h1.2v-3.6c0-0.3,0.1-0.5,0.2-0.7c0.1-0.1,0.3-0.1,0.4-0.1c0.3,0.1,0.3,0.4,0.3,0.9V29H40z"/>
+						<rect class="text" x="27.6" y="23.2" fill-rule="evenodd" clip-rule="evenodd" fill="#7676A7" width="1.2" height="5.8"/>
+						<path class="text" fill-rule="evenodd" clip-rule="evenodd" fill="#7676A7" d="M33.3,29v-5.8h-1.2v1.4c-0.1-0.2-0.4-0.4-0.7-0.4 c-0.9,0-1.6,0.9-1.6,2.3c0,1,0.3,2.6,1.5,2.6c0.5,0,0.8-0.3,0.9-0.5V29H33.3z M31.8,24.6c0.2,0.4,0.2,1.2,0.2,1.9
+							c0,0.7,0,1.6-0.2,2c-0.1,0.1-0.2,0.2-0.4,0.2c-0.2,0-0.4-0.3-0.5-0.7c0-0.4,0-1,0-1.5c0-1,0.1-2,0.5-2
+							C31.7,24.5,31.7,24.5,31.8,24.6"/>
+						<path class="text" fill-rule="evenodd" clip-rule="evenodd" fill="#7676A7" d="M43.7,24.4c0.3,0.2,0.5,0.5,0.5,1.1V29h-1.2v-0.5 c-0.1,0.4-0.5,0.6-1.1,0.6c-0.4,0-1.2-0.2-1.2-1.3c0-1,0.7-1.2,1.4-1.6c0.7-0.3,0.7-0.3,0.7-0.6v-0.8c0-0.3-0.2-0.5-0.5-0.5
+							c-0.1,0-0.4,0.1-0.4,0.3c0,0.2,0.2,0.2,0.2,0.5c0,0.5-0.4,0.7-0.7,0.6c-0.2,0-0.5-0.1-0.6-0.5c0-0.6,0.7-1.2,1.7-1.2
+							C43.2,24.1,43.4,24.2,43.7,24.4 M43,26.2l-0.4,0.2c-0.4,0.2-0.5,0.6-0.5,0.9c0,0.3,0,0.5,0,1c0,0.4,0.3,0.5,0.5,0.4
+							c0.2-0.1,0.4-0.6,0.4-1.1V26.2z"/>
+						<path class="text" fill-rule="evenodd" clip-rule="evenodd" fill="#7676A7" d="M26.1,31c0.3,0.2,0.5,0.5,0.5,1.1v3.6h-1.1v-0.5 c-0.1,0.4-0.5,0.6-1.1,0.6c-0.5,0-1.2-0.2-1.2-1.3c0-1,0.7-1.2,1.4-1.6c0.7-0.3,0.8-0.4,0.8-0.6v-0.8c0-0.4-0.2-0.5-0.5-0.5
+							c-0.1,0-0.4,0.1-0.4,0.2c0,0.2,0.2,0.2,0.2,0.6c0,0.5-0.4,0.6-0.7,0.6c-0.2,0-0.5-0.2-0.6-0.6c0-0.6,0.7-1.1,1.7-1.1
+							C25.5,30.8,25.8,30.9,26.1,31 M25.4,32.8L25,33.1c-0.4,0.2-0.5,0.6-0.5,0.9c0,0.3,0,0.6,0,1c0,0.4,0.2,0.5,0.5,0.4
+							c0.3-0.1,0.4-0.5,0.4-1.1V32.8z"/>
+						<path class="text" fill-rule="evenodd" clip-rule="evenodd" fill="#7676A7" d="M34.7,32.3c0-1-0.5-1.5-1.3-1.4c-0.4,0-0.7,0.2-0.9,0.5v-1.4h-1.2 v3.3c0,1.2-0.9,2.3-1.7,2.3c-0.6,0-0.7-0.5-0.8-1c-0.1-0.7-0.1-1.5,0-2.4c0.1-0.6,0.2-1,0.6-1c0.3,0,0.4,0.2,0.2,0.4
+							c-0.1,0.2-0.4,0.4-0.2,0.7c0.1,0.4,0.8,0.5,1.1,0.2c0.2-0.3,0.2-0.7,0-1c-0.2-0.4-0.6-0.5-1.1-0.5c-0.7,0-2,0.6-2,2.5
+							c0,2.1,1.3,2.4,2.1,2.4c0.9,0,1.6-0.7,1.8-1.4v1.3h1.2v-3.6c0-0.4,0.1-0.6,0.2-0.7c0.1-0.1,0.3-0.1,0.4-0.1
+							c0.3,0.1,0.3,0.4,0.3,0.9v3.6h1.2V32.3z"/>
+						<path class="text" fill-rule="evenodd" clip-rule="evenodd" fill="#7676A7" d="M22.2,23.1v2H22c-0.2-1-0.7-1.7-1.3-1.8c-0.4,0-0.7,0.2-0.9,0.6 c-0.2,0.4-0.3,1.3-0.3,2.4c0,1,0,1.7,0.1,2.3c0.1,0.2,0.2,0.6,0.7,0.6c0.2,0,0.4-0.1,0.5-0.2c0.2-0.2,0.2-0.6,0.2-0.9v-1
+							c0-0.4-0.1-0.6-0.3-0.7c-0.1-0.1-0.4-0.1-0.5-0.1v-0.2h2v5.1h-0.2c-0.1-0.4-0.2-0.7-0.4-1c-0.2-0.3-0.5-0.7-1-0.7
+							c-0.6,0-1,0.3-1,0.9c0,0.7,0.4,0.9,1.2,1.3c0.7,0.4,1.7,0.8,1.7,2c0,1.2-1,2-2.2,2h-1.9v-2.5h0.2c0.3,1.9,1.1,2.2,1.6,2.2
+							c0.7,0,1-0.4,1-1c0-0.8-0.6-1.1-1.3-1.5C19,32.3,18.5,32,18.5,31c0-0.9,0.7-1.4,1.5-1.6c-1.6-0.2-2-1.6-2-3.1
+							c0-1.5,0.9-3.2,2.6-3.2H22.2z"/>
+						<path class="clipContainer" fill="#2E3032" fill-opacity="0" stroke="#7676A7" stroke-miterlimit="10" d="M42.1,15.8c0,0.3,0.2,0.5,0.5,0.5h19.7c0.3,0,0.5-0.2,0.5-0.5v-7 c0-0.3-0.2-0.5-0.5-0.5H42.6c-0.3,0-0.5,0.2-0.5,0.5V15.8z"/>
+						<path class="clip" fill="#7676A7" d="M52.1,1.5C52.1,1.5,52.1,1.5,52.1,1.5c0.8,0,2.6,0.2,2.9,1c0.2,0.5-0.3,1.4-1.3,2.4l-0.2,0.2l2.7,10.3 c0.1,0.5,0.5,1.5,1.6,1.5v-1c-0.5,0-0.6-0.5-0.7-0.7l-2.6-9.8c1.3-1.3,1.7-2.4,1.3-3.3c-0.6-1.6-3.5-1.6-3.8-1.6v0c0,0,0,0,0,0
+							c0,0,0,0,0,0v0c-0.3,0-3.2,0-3.8,1.6c-0.4,0.9,0.1,2,1.3,3.3L47,15.3c0,0.1-0.1,0.6-0.7,0.6v1c1.1,0,1.6-1,1.6-1.4l2.7-10.3
+							l-0.2-0.2c-1.1-1-1.5-1.9-1.3-2.4C49.5,1.8,51.2,1.5,52.1,1.5C52.1,1.5,52.1,1.5,52.1,1.5"/>
+						<path class="clipBtn" fill="#7676A7" d="M41.1,16.6c0,0.2,0.1,0.4,0.2,0.4l4.8,0c0.1,0,0.2-0.2,0.2-0.4l0-0.6c0-0.2-0.1-0.4-0.2-0.4l-4.8,0 c-0.1,0-0.2,0.2-0.2,0.4L41.1,16.6z"/>
+						<path class="clipBtn" fill="#7676A7" d="M57.8,16.6c0,0.2,0.1,0.4,0.2,0.4l4.8,0c0.1,0,0.2-0.2,0.2-0.4l0-0.6c0-0.2-0.1-0.4-0.2-0.4l-4.8,0 c-0.1,0-0.2,0.2-0.2,0.4L57.8,16.6z"/>
+						<path class="clipBtn" fill="#7676A7" d="M48.8,16.7c0,0.3,0.1,0.5,0.3,0.5l6.1,0c0.2,0,0.3-0.2,0.3-0.5l0-0.8c0-0.3-0.1-0.5-0.3-0.5l-6.1,0 c-0.2,0-0.3,0.2-0.3,0.5L48.8,16.7z"/>
+					</svg>
+					<h3>Mutual Funds</h3>
+				</li>
+				<li data-icon="etf" class="etfIcon">
+				    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				       viewBox="0 0 67 75" enable-background="new 0 0 67 75" xml:space="preserve">
+				    <path class="backFold" fill="#653482" fill-opacity="0" stroke="#84559A" stroke-miterlimit="10" d="M10.5,4.4C8.8,4.3,7.5,5.9,7.4,7.5l-0.1,2H59L10.5,4.4z"/>
+				      <path class="contour" fill="#84559A" fill-opacity="0" stroke="#84559A" stroke-miterlimit="10" d="M64.9,11.9c0-1.8-1.4-3.2-3.2-3.2H4.8c-1.8,0-3.2,1.4-3.2,3.2v26.9
+				        v22.6h63.2V38.8V11.9z"/>
+				    <path class="bottom" fill="#2E3032" fill-opacity="0" stroke="#84559A" stroke-miterlimit="10" d="M1.7,68.5c0,1.8,1.4,3.2,3.2,3.2h56.9c1.8,0,3.2-1.4,3.2-3.2v-7.4
+				      H1.7V68.5z"/>
+				      <path class="text" fill="#84559A" d="M17.9,36.9h-7.6V44h8.5v2.1h-11V26.5h10.6v2.1h-8v6.2h7.6V36.9z"/>
+				      <path class="text" fill="#84559A" d="M25.8,28.7h-5.9v-2.1h14.5v2.1h-6v17.4h-2.6V28.7z"/>
+				      <path class="text" fill="#84559A" d="M36.5,26.5H47v2.1h-8v6.5h7.4v2.1H39v8.9h-2.5V26.5z"/>
+				      <path class="text" fill="#84559A" d="M50.2,43.5c0.8,0.5,2.1,1,3.4,1c1.9,0,2.7-0.9,2.7-2.1c0-1.2-0.7-1.9-2.6-2.6c-2.5-0.9-3.7-2.3-3.7-4
+				        c0-2.3,1.8-4.1,4.8-4.1c1.4,0,2.7,0.4,3.5,0.9l-0.6,1.9c-0.6-0.3-1.6-0.8-2.9-0.8c-1.5,0-2.4,0.9-2.4,1.9c0,1.2,0.8,1.7,2.7,2.4
+				        c2.4,0.9,3.7,2.1,3.7,4.2c0,2.5-1.9,4.2-5.3,4.2c-1.5,0-3-0.4-3.9-1L50.2,43.5z"/>
+				      <path class="clipContainer" fill="#2E3032" fill-opacity="0" stroke="#84559A" stroke-miterlimit="10" d="M42.1,15.8c0,0.3,0.2,0.5,0.5,0.5h19.7c0.3,0,0.5-0.2,0.5-0.5v-7
+				        c0-0.3-0.2-0.5-0.5-0.5H42.6c-0.3,0-0.5,0.2-0.5,0.5V15.8z"/>
+				    <path class="clip" fill="#84559A" d="M52.1,1.5C52.1,1.5,52.1,1.5,52.1,1.5c0.8,0,2.6,0.2,2.9,1c0.2,0.5-0.3,1.4-1.3,2.4l-0.2,0.2l2.7,10.3
+				      c0.1,0.5,0.5,1.5,1.6,1.5v-1c-0.5,0-0.6-0.5-0.7-0.7l-2.6-9.8c1.3-1.3,1.7-2.4,1.3-3.3c-0.6-1.6-3.5-1.6-3.8-1.6v0c0,0,0,0,0,0
+				      c0,0,0,0,0,0v0c-0.3,0-3.2,0-3.8,1.6c-0.4,0.9,0.1,2,1.3,3.3L47,15.3c0,0.1-0.1,0.6-0.7,0.6v1c1.1,0,1.6-1,1.6-1.4l2.7-10.3
+				      l-0.2-0.2c-1.1-1-1.5-1.9-1.3-2.4C49.5,1.8,51.2,1.5,52.1,1.5C52.1,1.5,52.1,1.5,52.1,1.5"/>
+				    <path class="clipBtn" fill="#84559A" d="M41.1,16.6c0,0.2,0.1,0.4,0.2,0.4l4.8,0c0.1,0,0.2-0.2,0.2-0.4l0-0.6c0-0.2-0.1-0.4-0.2-0.4l-4.8,0
+				      c-0.1,0-0.2,0.2-0.2,0.4L41.1,16.6z"/>
+				    <path class="clipBtn" fill="#84559A" d="M57.8,16.6c0,0.2,0.1,0.4,0.2,0.4l4.8,0c0.1,0,0.2-0.2,0.2-0.4l0-0.6c0-0.2-0.1-0.4-0.2-0.4l-4.8,0
+				      c-0.1,0-0.2,0.2-0.2,0.4L57.8,16.6z"/>
+				    <path class="clipBtn" fill="#84559A" d="M48.8,16.7c0,0.3,0.1,0.5,0.3,0.5l6.1,0c0.2,0,0.3-0.2,0.3-0.5l0-0.8c0-0.3-0.1-0.5-0.3-0.5l-6.1,0
+				      c-0.2,0-0.3,0.2-0.3,0.5L48.8,16.7z"/>
+				    </svg>
+					<h3>Traded Funds</h3>
+				</li>
+				<li data-icon="robo" class="roboIcon">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 67 75" enable-background="new 0 0 67 75" xml:space="preserve">
+						<path class="contour" fill="#82B044" fill-opacity="0" stroke="#82B044" stroke-miterlimit="10" d="M62.2,9.4H48.9V4.7c0-2.1-1.7-3.8-3.8-3.8H24 c-2.1,0-3.8,1.7-3.8,3.8v4.7H4.8c-1.8,0-3.2,1.4-3.2,3.2v27.1v22.8h63.8V39.7V12.6C65.4,10.8,63.9,9.4,62.2,9.4z M23.5,8 c0-1.8,1.5-3.3,3.3-3.3h15.5c1.8,0,3.3,1.5,3.3,3.3v1.4H23.5V8z"/>
+						<path class="bottom" fill="#4D4D4D" fill-opacity="0" stroke="#82B044" stroke-miterlimit="10" d="M1.6,69.7c0,1.8,1.4,3.2,3.2,3.2h57.3c1.8,0,3.2-1.4,3.2-3.2v-7.4 H1.6V69.7z"/>
+						<path class="robot" fill="#82B044" d="M49.1,26.5L49.1,26.5C49.1,26.6,49.1,26.6,49.1,26.5C49.1,26.6,49,26.6,49.1,26.5l-6.5,0.1v-4.3
+								c0-1-0.8-1.8-1.7-1.8h-1.9v2.3h0.7c0.4,0,0.7,0.4,0.7,0.8v3.1H26.6v-3.1c0-0.4,0.6-0.8,1-0.8h0.3v-2.3h-1.5c-1,0-1.9,0.8-1.9,1.8
+								v4.3h-6.2c0,0,0,0,0,0c0,0,0,0,0,0H18v-0.1c-0.4,0.2-0.6,5.2-0.6,11.3c0,6.1,0.2,11.1,0.6,11.3v0.1h31.1v-0.1
+								c0.2-0.3,0.6-5.3,0.6-11.3C49.7,31.8,49.3,26.8,49.1,26.5z M21.9,35.7c0-2.8,2.3-5,5-5c2.8,0,5,2.3,5,5c0,2.8-2.3,5-5,5
+								C24.2,40.7,21.9,38.4,21.9,35.7z M37.6,47.2h-7.4v-5.1h7.4V47.2z M40.9,40.7c-2.8,0-5-2.3-5-5c0-2.8,2.3-5,5-5c2.8,0,5,2.3,5,5
+								C45.9,38.4,43.7,40.7,40.9,40.7z"/>
+						<path class="robot" fill="#82B044" d="M29.8,20L29.8,20c-0.4,0-0.7,0.3-0.7,0.7v1.9c0,0.4,0.3,0.7,0.7,0.7h0c0.4,0,0.7-0.3,0.7-0.7v-1.9 C30.5,20.3,30.2,20,29.8,20z"/>
+						<path class="robot" fill="#82B044" d="M32.2,20L32.2,20c-0.4,0-0.7,0.3-0.7,0.7v1.9c0,0.4,0.3,0.7,0.7,0.7h0c0.4,0,0.7-0.3,0.7-0.7v-1.9 C33,20.3,32.6,20,32.2,20z"/>
+						<path class="robot" fill="#82B044" d="M34.8,20L34.8,20c-0.4,0-0.7,0.3-0.7,0.7v1.9c0,0.4,0.3,0.7,0.7,0.7h0c0.4,0,0.7-0.3,0.7-0.7v-1.9 C35.5,20.3,35.2,20,34.8,20z"/>
+						<path class="robot" fill="#82B044" d="M37.2,20L37.2,20c-0.4,0-0.7,0.3-0.7,0.7v1.9c0,0.4,0.3,0.7,0.7,0.7h0c0.4,0,0.7-0.3,0.7-0.7v-1.9 C38,20.3,37.6,20,37.2,20z"/>
+						<path class="robot" fill="#82B044" d="M14.2,37.7h-2.6c-0.2-0.3-0.5-0.5-0.9-0.5c-0.6,0-1,0.5-1,1c0,0.6,0.5,1,1,1c0.3,0,0.7-0.2,0.8-0.4h2.6 v4.1H16v-9.2h-1.8V37.7z"/>
+						<path class="robot" fill="#82B044" d="M52.8,38.8h2.6c0.2,0.3,0.5,0.5,0.9,0.5c0.6,0,1-0.5,1-1c0-0.6-0.5-1-1-1c-0.3,0-0.7,0.2-0.8,0.4h-2.6 v-4.1H51v9.2h1.8V38.8z"/>
+					</svg>
+					<h3>Automated Investing</h3>
+				</li>
+				<li data-icon="live" class="liveIcon">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 67 75" enable-background="new 0 0 67 75" xml:space="preserve">
+						<path class="contour" fill="#4DC1C3" fill-opacity="0" stroke="#4DC1C3" stroke-miterlimit="10" d="M62.2,9.4H48.9V4.7c0-2.1-1.7-3.8-3.8-3.8H24 c-2.1,0-3.8,1.7-3.8,3.8v4.7H4.8c-1.8,0-3.2,1.4-3.2,3.2v27.1v22.8h63.8V39.7V12.6C65.4,10.8,63.9,9.4,62.2,9.4z M23.5,8 c0-1.8,1.5-3.3,3.3-3.3h15.5c1.8,0,3.3,1.5,3.3,3.3v1.4H23.5V8z"/>
+						<path class="bottom" fill="#4D4D4D" fill-opacity="0" stroke="#4DC1C3" stroke-miterlimit="10" d="M1.6,69.7c0,1.8,1.4,3.2,3.2,3.2h57.3c1.8,0,3.2-1.4,3.2-3.2v-7.4 H1.6V69.7z"/>
+						<polygon class="logo" fill="#4DC1C3" points="37.1,37.7 36,36.1 46,21 37.9,21 29.3,34.6 29.3,21 21.6,21 21.6,36.6 21.6,51.2 29.4,51.2 29.4,38.1 37.6,51.2 46.7,51.2"/>
+					</svg>
+					<h3>Live Trading</h3>
+				</li>
+				<li data-icon="ira" class="iraIcon">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 67 75" enable-background="new 0 0 67 75" xml:space="preserve">
+						<path class="contour" fill="#F6989A" fill-opacity="0" stroke="#F6989A" stroke-width="0.9063" stroke-miterlimit="10" d="M64.7,32.7c-0.2-0.6-0.9-0.7-1.8-1.2
+						c0,0-2.3-1.1-3.9-2c-1.3-0.8-1.7-2.5-3.3-4.8c0.2-0.3,0.4-0.6,0.6-0.9c2.9-4.5,4.6-7,4.5-7.6c-0.1-0.6-0.1-0.8-0.7-1
+						c-1-0.4-8.2-1.1-13.2,1.4c-0.2,0.1-0.4,0.2-0.6,0.3c-1.5-0.8-3.1-1.5-4.7-2.2c-5.5-2.3-15.1-2-21.9,0.1c-4.7,1.5-11.2,6.8-11.2,6.9
+						c0,0-2.6,2.4-4.4,6.2c-1.7,3.7-3.8,11.1-1,18.1c1.6,4.1,4.7,7.4,7.1,9.8l1.2,5.8c0.1,0.4,0.4,0.6,0.8,0.6h7.3c0.4,0,0.7-0.2,0.8-0.5
+						l0.9-2.4c2.6,0.3,5.7,0.5,9.3,0.5c3.2,0,6-0.2,8.6-0.4l0.4,2.2c0.1,0.4,0.4,0.6,0.8,0.6h7.3c0.4,0,0.7-0.2,0.8-0.5l1.6-4.4
+						c0,0,0.1-0.1,0.1-0.1c1.3-1,3.5-3.2,5.2-5.1c1.7-1.9,2.9-5.2,3.5-5.9c0.6-0.7,4.2-2.3,5-2.7c0.8-0.4,1-1.5,1.1-2.3
+						C64.9,40.3,65.1,33.9,64.7,32.7z"/>
+						<path class="percent" fill="#F6989A" d="M23.3,29.2c0.9-0.9,2.1-1.4,3.4-1.4s2.5,0.5,3.4,1.4c0.9,0.9,1.4,2.1,1.4,3.4c0,1.3-0.5,2.5-1.4,3.4
+							c-0.9,0.9-2.1,1.4-3.4,1.4s-2.5-0.5-3.4-1.4c-0.9-0.9-1.4-2.1-1.4-3.4S22.4,30.1,23.3,29.2z M26.6,34.4c1,0,1.8-0.8,1.8-1.8
+							s-0.8-1.8-1.8-1.8s-1.8,0.8-1.8,1.8S25.6,34.4,26.6,34.4z M39.1,27.8L28.7,48.1h-2.5l10.4-20.3H39.1z M35.3,39.9
+							c0.9-0.9,2.1-1.4,3.4-1.4s2.5,0.5,3.4,1.4c0.9,0.9,1.4,2.1,1.4,3.4c0,1.3-0.5,2.5-1.4,3.4c-0.9,0.9-2.1,1.4-3.4,1.4
+							s-2.5-0.5-3.4-1.4c-0.9-0.9-1.4-2.1-1.4-3.4C33.9,42,34.4,40.8,35.3,39.9z M38.6,45.1c1,0,1.8-0.8,1.8-1.8c0-1-0.8-1.8-1.8-1.8
+							c-1,0-1.8,0.8-1.8,1.8C36.9,44.3,37.6,45.1,38.6,45.1z"/>
+						<path class="hole" fill="#FFFFFF" fill-opacity="0" stroke="#F6989A" stroke-width="0.9063" stroke-miterlimit="10" d="M24,15.7c0.2-0.7,0.8-1.3,1.6-1.4 c1.2-0.2,2.8-0.3,5.1-0.3c2.1,0,4.1,0.1,5.2,0.3c0.8,0.2,1.4,0.7,1.6,1.4l0,0c0,0-2-0.4-6.7-0.4C26.1,15.3,24,15.7,24,15.7L24,15.7z"/>
+						<path class="eye" fill="#FFFFFF" fill-opacity="0" stroke="#F6989A" stroke-width="0.9063" stroke-miterlimit="10" d="M56,31.2c-0.2,0.2-0.8-0.1-1.2-0.9 c-0.5-0.7-0.3-1.9,0.1-1.9c0.6,0,1.1,0.4,1.3,1.1C56.4,30.3,56.2,31.1,56,31.2z"/>
+					</svg>
+					<h3>Retirement Accounts</h3>
+				</li>
+				<li data-icon="practice" class="practiceIcon">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 67 75" enable-background="new 0 0 67 75" xml:space="preserve">
+						<path class="contour" fill="#2275B9" fill-opacity="0" stroke="#2275B9" stroke-miterlimit="10" d="M62.2,9.4H48.9V4.7c0-2.1-1.7-3.8-3.8-3.8H24
+								c-2.1,0-3.8,1.7-3.8,3.8v4.7H4.8c-1.8,0-3.2,1.4-3.2,3.2v27.1v22.8h63.8V39.7V12.6C65.4,10.8,63.9,9.4,62.2,9.4z M23.5,8
+								c0-1.8,1.5-3.3,3.3-3.3h15.5c1.8,0,3.3,1.5,3.3,3.3v1.4H23.5V8z"/>
+						<path class="bottom" fill="#4D4D4D" fill-opacity="0" stroke="#2275B9" stroke-miterlimit="10" d="M1.6,69.7c0,1.8,1.4,3.2,3.2,3.2h57.3c1.8,0,3.2-1.4,3.2-3.2v-7.4H1.6 V69.7z"/>
+						<path class="hat" fill="#2275B9" d="M50.5,38.3c0-1.9-7.2-3.4-16-3.4c-8.8,0-16,1.5-16,3.4v12.2h0.4c1.6-1.5,8-2.6,15.6-2.6 c7.6,0,14,1.1,15.6,2.6h0.4V38.3z"/>
+						<path class="hat" fill="#2275B9" d="M59.8,34.4L34.5,21.8L9.2,34.4l2.9,1.8v9.5c0,0,0.4,0.4,1,1.3c-2,2-2.1,5.4-1.8,5.6c0.3,0.1,3.5,0,3.5,0 s-0.5-3.9-1.2-5.2c0.2-0.6,0.6-1.5,0.6-1.5l-0.4-8.6l3.5,2.2v-1.2c0-4.5,12.2-5,17.5-5c5.3,0,17.5,0.5,17.5,5v1L59.8,34.4z"/>
+					</svg>
+					<h3>Practice Trading</h3>
+				</li>
+				<li data-icon="tournament" class="tournamentIcon">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 67 75" enable-background="new 0 0 67 75" xml:space="preserve">
+						<path class="contour" fill="#F6AA1F" fill-opacity="0" stroke="#F6AA1F" stroke-miterlimit="10" d="M62.2,9.4H48.9V4.7c0-2.1-1.7-3.8-3.8-3.8H24
+								c-2.1,0-3.8,1.7-3.8,3.8v4.7H4.8c-1.8,0-3.2,1.4-3.2,3.2v27.1v22.8h63.8V39.7V12.6C65.4,10.8,63.9,9.4,62.2,9.4z M23.5,8
+								c0-1.8,1.5-3.3,3.3-3.3h15.5c1.8,0,3.3,1.5,3.3,3.3v1.4H23.5V8z"/>
+						<path class="trophy" fill="#F6AA1F" d="M36.7,50.1c0-1.2,0-2.5,0-3.7c7.5-7.4,17.2-12.7,15.8-28.3c-2.8,0-5.6,0-8.4,0c-0.2,0.7,0.4,2.3-0.3,2.5
+								c-3.2,0-6.4,0-9.6,0c-3.2,0-6.4,0-9.6,0c-0.8-0.2-0.1-1.7-0.3-2.5c-2.8,0-5.6,0-8.4,0C14.4,33.7,24.2,39,31.7,46.3
+								c0,1.2,0,2.5,0,3.7c-1.7,1.9-6,1.5-7.4,3.8c3.3,0,6.6,0,9.9,0c3.3,0,6.6,0,9.9,0C42.7,51.6,38.5,52,36.7,50.1z M39.4,41.4
+								c4.3-5,6.5-11.8,5.7-21.5c1.9,0,3.8,0,5.7,0c-0.5,10.3-5,16.9-11.4,21.8C39,42.1,39.2,41.7,39.4,41.4z M29,41.7
+								C22.6,36.8,18,30.2,17.5,20c1.9,0,3.8,0,5.7,0c-0.8,9.6,1.5,16.5,5.8,21.4C29.1,41.7,29.4,42.1,29,41.7z"/>
+						<path class="bottom" fill="#4D4D4D" fill-opacity="0" stroke="#F6AA1F" stroke-miterlimit="10" d="M1.6,69.7c0,1.8,1.4,3.2,3.2,3.2h57.3c1.8,0,3.2-1.4,3.2-3.2v-7.4H1.6 V69.7z"/>
+					</svg>
+					<h3>Tournament Trading</h3>
+				</li>
+				<li data-icon="tools" class="toolsIcon">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 67 75" enable-background="new 0 0 67 75" xml:space="preserve">
+						<circle fill="#4DC1C3" fill-opacity="0" cx="33.4" cy="32.6" r="25.8"/>
+						<path class="contour" fill="#BCBCBC" fill-opacity="0" stroke="#4DC1C3" stroke-width="0.8876" stroke-miterlimit="10" d="M65,30.4h-2.3c-0.1-1.7-0.4-3.5-0.8-5.1
+									l2.1-0.7l-0.6-1.9c-0.8-2.6-2-5-3.5-7.3l-1.1-1.7l-1.9,1.2c-1-1.4-2.2-2.7-3.5-3.8l1.4-1.8L53.3,8c-2.1-1.7-4.4-3.2-6.9-4.3
+									l-1.9-0.8L43.6,5c-1.6-0.6-3.3-1.1-5-1.4l0.2-2.2l-2-0.2c-2.7-0.3-5.4-0.2-8.1,0.1l-2,0.3L27,3.8c-1.7,0.4-3.3,0.9-4.9,1.5l-1-2
+									l-1.8,0.9c-2.4,1.2-4.7,2.7-6.7,4.5L11,10.1l1.5,1.7c-1.2,1.2-2.3,2.5-3.3,4l-1.9-1.2l-1,1.7c-1.4,2.3-2.5,4.8-3.3,7.4l-0.6,2
+									l2.2,0.6c-0.4,1.7-0.6,3.4-0.6,5.1l-2.2,0.1l0.1,2c0.1,2.7,0.5,5.4,1.3,8l0.6,2l2.2-0.6c0.6,1.6,1.4,3.2,2.2,4.7l-1.9,1.3l1.2,1.7
+									c1.5,2.2,3.4,4.3,5.4,6l1.5,1.3l1.5-1.7c1.4,1,2.8,1.9,4.4,2.7L19.1,61l1.9,0.8c2.5,1.1,5.1,1.8,7.8,2.2l2,0.3l0.3-2.2
+									c0.7,0.1,1.4,0.1,2.1,0.1c1,0,2-0.1,3-0.2l0.4,2.2l2-0.3c2.7-0.5,5.3-1.3,7.7-2.4l1.9-0.8l-0.9-2c1.5-0.8,3-1.8,4.3-2.9l1.5,1.7
+									l1.5-1.4c2-1.8,3.8-3.9,5.2-6.2L61,48l-1.9-1.2c0.8-1.5,1.5-3.1,2.1-4.7l2.2,0.6l0.5-2c0.7-2.6,1-5.3,1-8.1V30.4z M33.3,58
+									c-14,0-25.4-11.4-25.4-25.4c0-14,11.4-25.4,25.4-25.4c14,0,25.4,11.4,25.4,25.4C58.7,46.6,47.3,58,33.3,58z"/>
+
+						<clipPath id="SVGID_2_">
+							<path d="M21.1,48v1.1h24.3V48c0-2.4-5.4-4.4-12.1-4.4C26.6,43.6,21.1,45.6,21.1,48 M23.9,25.8l4.5,7.8h-9L23.9,25.8
+									z M42.7,25.8l4.5,7.8h-9L42.7,25.8z M35.5,21.7c2.1,0.9,3.6,2.7,6.3,3l-5.2,8.9h-1.1V21.7z M24.8,24.7c2.7-0.3,4.2-2.1,6.3-3v11.9
+									H30L24.8,24.7z M32.2,19.3c0-0.6,0.5-1.1,1.1-1.1c0.6,0,1.1,0.5,1.1,1.1c0,0.6-0.5,1.1-1.1,1.1C32.7,20.4,32.2,19.9,32.2,19.3
+									 M33.3,16c0,0-2.5-0.3-4.8,2.2c-2.3,2.5-5,4.6-8,2.3c-1-0.8-2.9-1.7-2.1,0.3c0.7,1.8,2.4,3.5,4.7,3.9l-5.2,9h-1.1
+									c0,3,3.2,5.5,7.2,5.5c3.8,0,6.9-2.3,7.2-5.2v8.5h4.4V34c0.2,2.9,3.4,5.2,7.2,5.2c4,0,7.2-2.5,7.2-5.5h-1.1l-5.2-9
+									c2.3-0.4,4-2.1,4.7-3.9c0.8-2-1.1-1.1-2.1-0.3c-3.1,2.4-5.7,0.3-8-2.3c-1.9-2-3.8-2.2-4.5-2.2C33.4,16,33.3,16,33.3,16"/>
+						</clipPath>
+						<rect x="16.7" y="15.7" clip-path="url(#SVGID_2_)" fill="#4DC1C3" width="33.1" height="33.4"/>
+					</svg>
+					<h3>Tools</h3>
+				</li>
+				<li data-icon="wire" class="wireIcon">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 67 75" enable-background="new 0 0 67 75" xml:space="preserve">
+						<path class="contour" fill="#C0BEBE" fill-opacity="0" stroke="#C0BEBE" stroke-miterlimit="10" d="M64.2,1.9l-2.7,2.8l-2.7-2.8h-0.3l-2.7,2.8l-2.7-2.8h-0.3
+							l-2.7,2.8l-2.7-2.8h-0.3l-2.7,2.8l-0.1-0.1l-0.1,0.1l-2.7-2.8h-0.1l-2.7,2.8l-0.1-0.1l-0.1,0.1l-2.7-2.8h-0.1L33,4.7l-0.1-0.1
+							l-0.1,0.1l-2.7-2.8H30l-2.7,2.8l-0.1-0.1l-0.1,0.1l-2.7-2.8h-0.1l-2.7,2.8l-0.1-0.1l-0.1,0.1l-2.7-2.8h-0.1l-2.7,2.8l-0.1-0.1
+							l-0.1,0.1L13,1.9h-0.3L10,4.7L7.3,1.9H7L4.3,4.7L1.6,2c0,0,0,55,0,58.9c0,3.8,0.4,4.3,4,4.3c3.3,0,43.8,0,43.8,0l15.2-16V2
+							l-0.1-0.1H64.2z"/>
+						<polygon fill="#FFFFFF" fill-opacity="0" stroke="#C0BEBE" stroke-miterlimit="10" points="48.9,65.1 48.9,49.2 64.2,49.2"/>
+						<path class="text" fill="#C0BEBE" d="M17.8,35.4l3.3,13.2l7.8-24.5l0,0l6.8,24.6L46.7,13l4.3,0L37.5,55.5l-3.8,0l-5.2-22L23,55.4l-3.8,0l-5.8-20 L17.8,35.4z"/>
+					</svg>
+					<h3>Investing Insights</h3>
+				</li>
+			</ul>
+
+			<ul class="intro-info productDetails">
+				<li data-detail="fund" class="fundDetail">
+					<div class="grid">
+						<div class="detailInfo">
+							<p>Over 12,000 Mutual Funds are available for purchase through Kapitall. To find out more about our complete list of Load and No Load Mutual funds, call us or chat with a Kapitall associate today.</p>
+							<div class="productButtons">
+								<a href="javascript:void('chat');" class="chatLink primary">Learn More</a>
+								<a href="javascript:void('chat');" class="chat chatLink"></a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li data-detail="etf" class="etfDetail">
+					<div class="grid">
+						<div class="detailInfo">
+							<p>ETFs or Exchange Traded Funds are an easy way to buy and sell shares in the collective performance of an entire portfolio of securities all at once. Commissions are as low as $5/ online trade. No Minimum Required. Open Your Free Account.</p>
+							<div class="productButtons">
+								<a href="https://www.kapitall.com/framework/#?tool=Lists&params=Asset" class="primary" target="_blank">Learn More</a>
+								<a href="javascript:void('chat');" class="chat chatLink"></a>
+								<a data-faq="https://kapitall.zendesk.com/hc/en-us/articles/213244917" href="javascript:void('info');" target="_blank" class="info"></a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li data-detail="live" class="liveDetail">
+					<div class="grid">
+						<div class="detailInfo">
+							<p>Easy, and no minimums. Our original self-directed portfolio for those people who prefer to do things themselves, giving you full control over your trading and financial decisions.   Commissions are as low as $5/ online trade. Open Your Free Account.</p>
+							<div class="productButtons">
+								<button data-product="TOOL_CreateLiveAccount" id="join_live" class="primary">Join Now</button>
+								<a href="javascript:void('chat');" class="chat chatLink"></a>
+								<a data-faq="https://kapitall.zendesk.com/hc/en-us/articles/212577568" href="javascript:void('info');" target="_blank" class="info"></a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li data-detail="robo" class="roboDetail">
+					<div class="grid">
+						<div class="detailInfo">
+							<p>Fee-free for 2015! What is your passion? A Robo-Advised Account is an automated  algorithmic-driven advisory solution for those who aren’t looking to invest on their own.  Kapitall’s Robo-Portfolios are carefully crafted based on your risk tolerance, the time you have to invest, and centered around your passions in life.</p>
+							<div class="productButtons">
+								<button data-product="TOOL_CreateLiveAccount_ROBO" id="join_robo" class="primary">Join Now</button>
+								<a href="javascript:void('chat');" class="chat chatLink"></a>
+								<a data-faq="https://kapitall.zendesk.com/hc/en-us/articles/212593668" href="javascript:void('info');" target="_blank" class="info"></a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li data-detail="ira" class="iraDetail">
+					<div class="grid">
+						<div class="detailInfo">
+							<p>Plan for your future now- “fee free” and no commissions for a limited time! Available as both a Robo-Advised or Self-directed account. Start saving today.</p>
+							<div class="productButtons">
+								<button data-product="TOOL_CreateLiveAccount_IRA" id="join_ira" class="primary">Join Now</button>
+								<a href="javascript:void('chat');" class="chat chatLink"></a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li data-detail="practice" class="practiceDetail">
+					<div class="grid">
+						<div class="detailInfo">
+							<p>Not ready to trade or just want to try something new? Try our risk-free Practice portfolios and invest with virtual cash.</p>
+							<div class="productButtons">
+								<button data-product="QUEST_PRACTICE" id="join_practice" class="primary">Join Now</button>
+								<a href="javascript:void('chat');" class="chat chatLink"></a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li data-detail="tournament" class="tournamentDetail">
+					<div class="grid">
+						<div class="detailInfo">
+							<p>Compete with other Kapitallists in our virtual trading tournaments. Use our boosts to get ahead and win cash prizes. </p>
+							<div class="productButtons">
+								<button data-product="QUEST_MONTHLY_TOURNAMENT" data-value="" id="join_tournament" class="primary">Join Now</button>
+								<a href="javascript:void('chat');" class="chat chatLink"></a>
+								<a data-faq="https://kapitall.zendesk.com/hc/en-us/articles/212615348" href="javascript:void('info');" target="_blank" class="info"></a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li data-detail="tools" class="toolsDetail">
+					<div class="grid">
+						<div class="detailInfo">
+							<p>Looking for trading ideas? Use our tools to compare companies, screen stocks, and more. It might just be what you’re looking for.</p>
+							<div class="productButtons">
+								<button data-product="QUEST_RESEARCH" id="join_tools" class="primary">Join Now</button>
+								<a href="javascript:void('chat');" class="chat chatLink"></a>
+								<a data-faq="https://kapitall.zendesk.com/hc/en-us/articles/212464788" href="javascript:void('info');" target="_blank" class="info"></a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li data-detail="wire" class="wireDetail">
+					<div class="grid">
+						<div class="detailInfo">
+							<p>Kapitall Wire serves up new market insights and ideas daily, free from financial jargon.</p>
+							<div class="productButtons">
+								<a class="primary" target="_blank" href="http://wire.kapitall.com/">Go to Wire</a>
+								<a href="javascript:void('chat');" class="chat chatLink"></a>
+								<a data-faq="https://kapitall.zendesk.com/hc/en-us/articles/213273197" href="javascript:void('info');" target="_blank" class="info"></a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<section id="sec-intro" class="parallax sec-intro">
+			<div class="parallax-content small-padding">
+				<div class="grid sec-content-container">
+
+					<div class="screen-col-1-3">
+						<div class="sec-content investing">
+							<h2 class="sec-intro-title">Oh God, here we go...investing.</h2>
+							<p>If you had a penny for every time someone told you to invest in your future, you wouldn't need to, you know, actually invest. Until that day comes along, we're here to help you manage the money you have so you can invest in the things that matter to you most.</p>
+						</div>
+						<div class="sec-content popular">
+							<h2 class="sec-intro-title">I'm popular--and (so) what?</h2>
+							<p>Remember that friend who always helped you with math homework? We do. And unlike your math teacher, we let our users exchange tips, ideas, and portfolios with each other. Reach out to a pal or message a champ from our leaderboard for insight--after all, sharing is caring.</p>
+						</div>
+					</div>
+					<div class="screen-col-1-3 pull-right">
+						<div class="sec-content playlist">
+							<h2 class="sec-intro-title">Who doesn't love a good playlist?</h2>
+							<p>Whether you're new to the market or a guru in training, we have over 1,000 investing ideas to expand your knowledge and portfolio. From the S&amp;P 500 to green energy to the zombie apocalypse, we've got a list for all of your interests. Let's play.</p>
+						</div>
+						<div class="sec-content more">
+							<h2 class="sec-intro-title">Give me, give me more.</h2>
+							<p>A game is only as good as its bonuses. Thanks to our store, you can enhance your experience through purchases with Koins you earn by using the platform. Game on.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="tools" data-state="wire" class="parallax tools">
+			<div class="parallax-content small-padding">
+				<div class="grid">
+					<h1 class="tools-title">Pick your tool and set your course.</h1>
+
+					<div class="mobile-col-1-4 tools-icon-container">
+						<span class="tools-icon"></span>
+					</div>
+					<ul class="mobile-col-3-4 tools-list">
+						<li data-target="wire">
+							<h2 class="x-small-title">Wire</h2>
+							<p class="large-body">Read daily articles offering fresh takes on all things investing. No decoder ring necessary--there's no financial jargon here.</p>
+						</li>
+						<li data-target="tools">
+							<h2 class="x-small-title">Tools</h2>
+							<p class="large-body">Analyze, chart, and compare stocks with our helpful tools. Use them to dive deeper into company financials and to get a better picture of an industry or sector.</p>
+						</li>
+						<li data-target="quests">
+							<h2 class="x-small-title">Quests</h2>
+							<p class="large-body">Learn how to invest through interactive educational experiences while racking up points, Koins, and badges. Whatever you want to do, there's a quest for that.</p>
+						</li>
+						<li data-target="store">
+							<h2 class="x-small-title">Store</h2>
+							<p class="large-body">You earned your Koins--this is where you spend them. From investing lessons to boosts for your tournament portfolio, the store has everything you need to become the investor you want to be.</p>
+						</li>
+					</ul>
+					<nav>
+						<ul>
+							<li><a data-switch="wire" href="javascript:void(0);" class="current">Wire</a></li>
+							<li><a data-switch="tools" href="javascript:void(0);">Tools</a></li>
+							<li><a data-switch="quests" href="javascript:void(0);">Quests</a></li>
+							<li><a data-switch="store" href="javascript:void(0);">Store</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</section>
+
+		<section id="why" class="parallax why">
+			<div class="parallax-content large-padding">
+				<h1 class="icon-title">Why we do it. <span class="icon"></span></h1>
+				<p>Investing can be confusing and intimidating. When you consider the countless other things you could spend your time and money on, it's a no-brainer why people aren't investing like older generations. It doesn't mean you don't care about your future, it just means preparing for retirement may not be the most important decision on your plate at the moment.</p>
+				<p>Thankfully, investing no longer has to be a head-scratcher. At Kapitall, we understand time is money and that your vision for the future may be a work in progress. So we set out to create an easy-to-use investing platform that recognizes and embraces your values and, most importantly, you.</p>
+				<p>Because we're here to educate and empower you to know your worth--all of it.</p>
+			</div>
+		</section>
+
+		<section id="quotes" data-state="bloomberg" class="parallax quotes">
+
+			<div class="parallax-content large-padding">
+				<h1 class="icon-title">Who hearts us <span class="icon"></span></h1>
+
+				<div class="grid quote-list">
+					<p data-target="bloomberg">"Investing for the rest of us"</p>
+					<p data-target="usa">"A colorful, user-friendly trading tool"</p>
+					<p data-target="read-write">"Gives investment a new face, one that will be familiar to Gen X and Y users"</p>
+					<p data-target="huffington">"A massive beautiful stock market playground"</p>
+					<p data-target="mashable">"If the X-Box had a stock program, it would look like Kapitall"</p>
+					<p data-target="pc-mag">"A free service that aims to change all"</p>
+				</div>
+
+				<ul>
+					<li class="bloomberg current"><a data-switch="bloomberg" href="javascript:void(0);">Bloomberg</a></li>
+					<li class="usa-today"><a data-switch="usa" href="javascript:void(0);">USA Today</a></li>
+					<li class="read-write"><a data-switch="read-write" href="javascript:void(0);">Readwrite</a></li>
+					<li class="huffington"><a data-switch="huffington" href="javascript:void(0);">Huffington Post</a></li>
+					<li class="mashable"><a data-switch="mashable" href="javascript:void(0);">Mashable</a></li>
+					<li class="pc-mag"><a data-switch="pc-mag" href="javascript:void(0);">PC Mag</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="big-o" data-state="default" class="parallax big-o">
+			<div class="parallax-content large-padding">
+				<h1 class="icon-title">
+					<span class="icon"></span>
+					Ask Big "O"</h1>
+
+				<div class="big-o-list">
+					<p data-target="default">Hey it's serious stuff, we get it, but that's exactly why we're here.</p>
+					<p data-target="minimum">No, we don't set minimums or impose quarterly maintenance fees. Trade with as much or as little as you want, all for a flat commission of &#36;7.95 per trade.</p>
+					<p data-target="market-masters">It's a monthly competition where you and other Kapitallists trade with virtual &#36;100,000 Tournament Portfolios for a chance to win cash.</p>
+					<p data-target="protected">We use <a class="questions-link" href="https://www.kapitall.com/framework/#?tool=About&params=Terms&options=Security" target="_blank">state-of-the-art encryption</a>, activity monitoring and automatic sign-out to keep your personal information secure.</p>
+					<p data-target="koins">Koins are our virtual currency, and you can use them to buy tons of cool items in the Kapitall Store. You earn Koins by exploring the website, levelling up, and playing our games and tournaments.</p>
+					<p data-target="cost">No—registering as a user or opening an account is totally free. No membership fees, minimums, or hidden fees—ever. For a full list of our fees, please <a class="questions-link" href="https://kapitall.zendesk.com/hc/en-us/articles/212574578" target="_blank">click here</a>.</p>
+				</div>
+
+				<ul class="grid">
+					<li class="screen-col-1-5"><a data-switch="minimum" href="javascript:void(0);">Is there a minimum needed to open a brokerage account?</a></li>
+					<li class="screen-col-1-5"><a data-switch="market-masters" href="javascript:void(0);">What's the Market Masters Tournament?</a></li>
+					<li class="screen-col-1-5"><a data-switch="protected" href="javascript:void(0);">How is my brokerage account protected?</a></li>
+					<li class="screen-col-1-5"><a data-switch="koins" href="javascript:void(0);">What are Koins?</a></li>
+					<li class="screen-col-1-5"><a data-switch="cost" href="javascript:void(0);">Does it cost anything to register on the Kapitall website?</a></li>
+				</ul>
+
+				<p id="ChatToggle">Check out these common questions or ask one of our friendly team members for help by <a id="ChatLink" class="questions-link newHeaderChatLive" href="javascript:void('Chat Now');">clicking here</a></p>
+			</div>
+		</section>
+
+	</main>
+
+	<div class="loading"></div>
+
+	<div id="Footer">
+		<div id="FooterDetails">
+	<div class="kapitallLinks">
+		<ul>
+			<!--<li><a target="_blank" href="http://backstage.kapitall.com/">About</a></li>-->
+			<li><a target="_blank" href="http://wire.kapitall.com">Kapitall Wire</a></li>
+			<li><a target="_blank" href="https://www.kapitall.com/#?tool=About&amp;params=Terms&amp;options=Privacy">Privacy Policy</a></li>
+			<li><a target="_blank" href="https://www.kapitall.com/#?tool=About&amp;params=Terms">Terms</a></li>
+			<li><a target="_blank" href="https://www.kapitall.com/#?tool=About&amp;params=Terms&amp;options=KapitallDisclaimers">Risk Disclosure</a></li>
+		</ul>
+		<a class="sipc-logo sprite" target="_blank" href="http://sipc.org">SIPC</a>
+	</div>
+
+
+	<div class="disclaimer">
+    <p>© 2016 New Kapitall Holdings, LLC. All rights reserved. Kapitall Generation LLC ("KapGen") is a wholly owned subsidiary of New Kapitall Holdings, LLC. Check the background of Kapitall Generation LLC on <a href="http://brokercheck.finra.org/">FINRA's BrokerCheck.</a> </p>
+
+    <p>KapGen acts as an introducing broker/dealer to Apex Clearing Corporation ("Apex"). Your account is with Apex who serves as the clearing agent and IRA Custodian. KapGen and Apex are members of SIPC, which offers protection securities customers of its members up to $500,000 (including up to $250,000 for claims for cash). For an explanatory brochure, please contact SIPC at (202) 371-8300 or visit <a href="http://www.sipc.org" target="_blank">http://www.sipc.org</a>.</p>
+
+    <p>System response and account connection times may vary due to a variety of factors, including trading volumes, market conditions, system performance, and other factors.</p>
+
+    <p>Investments are not FDIC Insured; No Bank Guarantee; May Lose Value. Investing involves risk, including the risk of losing principal. Past performance is not necessarily indicative of future results. Asset allocation and diversification does not necessarily eliminate the risk of experiencing investment loss. Neither KapGen nor WealthyX warrant or guarantee its process will lead to success. You take full responsibility for all trading actions, and should make every effort to understand the risks, fees and potential implications involved.</p>
+
+    <p>ACH transfers submitted after 2pm Eastern Time will be processed the next business day. Your funds are typically accessible for trading in your Kapitall Generation account on the next business day after the transfer has been processed, but may be subject to additional clearing time.</p>
+
+    <p>See full <a href="https://www.kapitall.com/#?tool=About&params=Terms" target="_blank">Terms of Use</a>. Securities products and services offered by Kapitall Generation, LLC, member <a href="http://www.finra.org" target="_blank">FINRA</a>/<a href="http://www.sipc.org" target="_blank">SIPC</a> See full <a href="https://www.kapitall.com/#?tool=About&params=Terms&options=KapitallDisclosures" target="_blank">Disclosures</a> and <a href="https://kapitall.zendesk.com/hc/en-us/articles/212574578-What-are-your-commissions-and-fees">Fees</a>. Kapitall's office is located at 1460 Broadway, New York, NY, 10036.</p>
+</div>
+
+
+	<img class="columnbreak" src="images/1b217401.line_white_v.png" />
+
+	<div class="footerFeature">
+		<ul class="socialNetworkButtons">
+			<li><a target="_blank" href="http://www.facebook.com/kapitall" class="facebookLink socialBtn"><span></span>Become A Fan</a></li>
+			<li><a target="_blank" href="http://www.twitter.com/kapitall" class="twitterLink socialBtn"><span></span>Follow Us</a></li>
+			<li><a target="_blank" href="https://plus.google.com/103495579584780075457" rel="publisher" class="googleLink socialBtn"><span></span>Google+</a></li>
+			<li><a target="_blank" href="http://www.youtube.com/user/Kapitallists" class="youtubeLink socialBtn"><span></span>Watch Us</a></li>
+			<li><a target="_blank" href="http://www.pinterest.com/kapitall/" class="pinterestLink socialBtn"><span></span>Get Inspired</a></li>
+			<li><a target="_blank" href="https://www.kapitall.com/api/rss/" class="rssLink socialBtn"><span></span>RSS Feed</a></li>
+			<li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.kapitall.kapitallpocket" class="googlePlayLink socialBtn"><img height="47" src="images/e740d09d.googlePlay4.png"></a></li>
+            <li><a target="_blank" href="https://itunes.apple.com/us/app/kapitall-pocket/id919007657" class="appStoreLink socialBtn"><img height="40" src="images/4aa815ca.iosStore.svg"></a></li>
+		</ul>
+		<a class="madeinNYC sprite" href="http://nytm.org/made-in-nyc" target="_blank">Made in NYC</a>
+	</div>
+</div>
+
+	</div>
+
+	<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-8376055-4', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+<script>
+	window.KapitallConfig = {"emailConfirm":false,"MODURL":"https://www.kapitall.com","kStudioURL":"https://www.kapitall.com/","domain":".kapitall.com","product":"live"};
+</script>
+
+<script src="scripts/a5bcadf6.main.js"></script>
+
+<script>
+$(function(){
+	window.KapitallPageController.init();
+});
+</script>
+
+<!-- Google Code for Remarketing Tag -->
+<!-- Added 6/8/14 -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1006536621;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<script>
+var $header = $('#Header');
+var $signInForm = $('div.kapitallSignIn', $header[0]);
+      
+var handleConfirmEmail = function() {
+        if(/errorcode=confirmEmail/.test(window.location.href)) {
+                $('div.error', $signInForm[0]).html('You need to verify your email first, please check your inbox').fadeIn();
+		$('#SignInToggle').trigger('click');
+        }
+};
+handleConfirmEmail();
+</script>
+
+</body>
+</html>
